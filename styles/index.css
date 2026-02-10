@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@source "../slides.md";
+@source "../components/**/*.{vue,js,ts}";
+@source "../pages/**/*.{md,vue}";
+@source "../snippets/**/*.{js,ts,md}";

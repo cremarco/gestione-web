@@ -2,3 +2,14 @@
 .agents/
 .cursor/
 .DS_Store
+**/node_modules/
+**/dist/
+coverage/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
+.env.*
+!.env.example
