@@ -4,3 +4,37 @@
 @source "../components/**/*.{vue,js,ts}";
 @source "../pages/**/*.{md,vue}";
 @source "../snippets/**/*.{js,ts,md}";
+
+:root {
+  --course-indigo: #4f46e5;
+  --course-lime: #84cc16;
+  --course-text: #0f172a;
+  --course-bg: #f3f4f6;
+}
+
+.slidev-layout {
+  color: var(--course-text);
+  background-color: var(--course-bg);
+}
+
+.slide-card-title {
+  font-size: 1.05rem;
+  line-height: 1.35;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: #0f172a;
+}
+
+.dark .slide-card-title {
+  color: #e2e8f0;
+}
+
+.slide-text {
+  font-size: 0.93rem;
+  line-height: 1.5;
+  color: #334155;
+}
+
+.dark .slide-text {
+  color: #cbd5e1;
+}

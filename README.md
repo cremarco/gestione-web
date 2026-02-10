@@ -1,4 +1,13 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+# Slide del corso
+
+## GESTIONE DELL'INFORMAZIONE IN RETE: STRUMENTI E STRATEGIE
+
+- Facoltà: LETTERE E FILOSOFIA
+- Corso: LAUREA TRIENNALE IN LINGUAGGI DEI MEDIA
+- Università: Università Cattolica
+- Docente: Cremaschi Marco
+
+Le slide sono realizzate con [Slidev](https://github.com/slidevjs/slidev).
 
 To start the slide show:
 
