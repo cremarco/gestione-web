@@ -5,16 +5,29 @@
 @source "../pages/**/*.{md,vue}";
 @source "../snippets/**/*.{js,ts,md}";
 
-:root {
-  --course-indigo: #4f46e5;
-  --course-lime: #84cc16;
-  --course-text: #0f172a;
-  --course-bg: #f3f4f6;
-}
+@layer base {
+  :root {
+    --course-indigo: #4f46e5;
+    --course-lime: #84cc16;
+    --course-text: #0f172a;
+    --course-bg: #f3f4f6;
+  }
 
-.slidev-layout {
-  color: var(--course-text);
-  background-color: var(--course-bg);
+  html,
+  body,
+  #app {
+    background-color: var(--course-bg);
+  }
+
+  .slidev-page {
+    background-color: var(--course-bg);
+  }
+
+  .slidev-layout {
+    color: var(--course-text);
+    width: 100%;
+    min-height: 100%;
+  }
 }
 
 .slide-card-title {
@@ -37,4 +50,59 @@
 
 .dark .slide-text {
   color: #cbd5e1;
+}
+
+.lesson-ribbon-wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10rem;
+  height: 10rem;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 50;
+}
+
+.lesson-ribbon {
+  position: absolute;
+  top: 1.35rem;
+  right: -3.6rem;
+  width: 14.5rem;
+  padding: 0.35rem 0;
+  transform: rotate(45deg);
+
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.62rem;
+  font-weight: 800;
+  color: #ffffff;
+
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.18);
+}
+
+.page-number {
+  position: absolute;
+  right: 0.75rem;
+  bottom: 0.7rem;
+  padding: 0.18rem 0.55rem;
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  color: #334155;
+
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+
+  pointer-events: none;
+  z-index: 50;
+}
+
+.dark .page-number {
+  background: rgba(15, 23, 42, 0.6);
+  border-color: rgba(255, 255, 255, 0.12);
+  color: #e2e8f0;
 }
