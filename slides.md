@@ -21,6 +21,14 @@ duration: 30min
 
 Premi spazio per iniziare.
 
+<!--
+Relatore:
+- Apri con “perché oggi”: overload informativo + AI → serve metodo.
+- Obiettivo del corso: ricerca verificabile + pubblicazione web (HTML/CSS) + uso critico dell’AI.
+- Output finale: elaborato HTML/CSS + fonti + metodo esplicito (replicabile).
+- Nota: le slide “Dal web” sono riferimenti autorevoli, non vanno lette tutte in aula.
+-->
+
 ---
 transition: slide-up
 class: bg-indigo-100
@@ -38,6 +46,13 @@ Questo corso unisce metodo umanistico e strumenti digitali per passare dalla ric
 2. Programma e modalità didattica.
 3. Criteri di valutazione.
 4. Calendario e strumenti consigliati.
+
+<!--
+Relatore:
+- Obiettivo: chiarire aspettative, modalità e criteri prima di iniziare i contenuti tecnici.
+- Messaggio chiave: l’AI accelera, ma senza verifica aumenta errori → il corso allena un metodo.
+- Suggerisci come studiare: tenere un quaderno di “procedure” (query, prompt, fonti, decisioni).
+-->
 
 ---
 transition: fade
@@ -278,6 +293,13 @@ Ogni modulo è pensato per essere applicabile a studio, ricerca e lavoro.
 
 **Docente:** Cremaschi Marco
 
+<!--
+Relatore (chiusura):
+- Verifica che sia chiaro: consegna finale, scadenze, criteri.
+- Domande guida: “cosa vi preoccupa di più: ricerca, AI o codice?”.
+- Mini-compito: installare Zotero + creare una raccolta “Gestione web” + salvare 3 fonti del proprio interesse.
+-->
+
 ---
 transition: slide-left
 class: bg-sky-100
@@ -288,6 +310,13 @@ lessonTone: sky
 # Lezione 2: Il Browser
 
 Per capire la rete, dobbiamo capire lo strumento che la rende visibile.
+
+<!--
+Relatore:
+- Hook: il browser è il “sistema operativo” del web: rete + sicurezza + UI + storage.
+- Anticipa il laboratorio: useremo DevTools (Network + Storage) per vedere cosa succede davvero.
+- Nota sul lessico: agenti/automazione ≠ magia → servono permessi, policy, audit.
+-->
 
 ---
 transition: fade
@@ -300,6 +329,16 @@ transition: fade
 3. Architettura, estensioni, sincronizzazione.
 4. Privacy: tracking, fingerprinting, rischi reali.
 5. Nuovi browser *agentici* e scenari futuri.
+
+<!--
+Relatore (scansione consigliata, ~60–75 min):
+- 15' “cosa fa un browser” + pipeline (da URL a pixel).
+- 15' architettura (processi) + estensioni/sync.
+- 15' privacy: terze parti, fingerprinting, anti-tracking.
+- 10' agentic browsers + implicazioni.
+- 15' mini-lab + confronto finale.
+Se sei corto: riduci la parte “futuro” e vai al mini-lab.
+-->
 
 ---
 transition: slide-up
@@ -657,6 +696,13 @@ Scegli un sito di notizie o un articolo.
 4. Apri **Application/Storage**: quali dati salva? (cookie, local storage)
 5. Concludi: cosa cambia se attivi blocco tracker / cookie di terze parti?
 
+<!--
+Relatore (conduzione):
+- Fai una demo di 60–90 secondi: Network → dominio/initiator e poi Storage → cookie/localStorage.
+- Output atteso: tabella “dominio → categoria → perché esiste”.
+- Se possibile: prova 1 refresh con blocco tracker attivo e nota differenze (richieste, banner cookie, errori).
+-->
+
 ---
 transition: slide-up
 ---
@@ -715,6 +761,10 @@ transition: fade-out
 Prossimo passo: useremo il browser anche come *strumento di analisi* (non solo di consumo).
 
 <!--
+Relatore (chiusura):
+- Riprendi 3 idee: pipeline, architettura multi-process, privacy/terze parti.
+- Domande guida: “quali richieste vi hanno sorpreso?” “quali dati vengono salvati e perché?”.
+
 Riferimenti di partenza (rielaborati):
 - "Strumenti e Applicazioni del Web" (lezione "Il browser", a.a. 2025-2026), Marco Viviani.
 - Grosskurth, Godfrey, "Architecture and evolution of the modern Web browser" (2006).
@@ -731,6 +781,13 @@ lessonTone: emerald
 
 Dal bisogno informativo alla lista di risultati (e, oggi, alla risposta generata).
 
+<!--
+Relatore:
+- Hook: “cercare” non è trovare: è trasformare un bisogno in una strategia replicabile.
+- Anticipa: pipeline classica (crawl/index/rank) + trend “answer engine”.
+- Obiettivo: metodo verificabile (link, triangolazione, tracciamento).
+-->
+
 ---
 transition: fade
 ---
@@ -742,6 +799,14 @@ transition: fade
 3. Crawling, indicizzazione, ranking, personalizzazione.
 4. Deep Web vs Dark Web.
 5. Trend AI: da SERP a "answer engine" (con rischi e metodo).
+
+<!--
+Relatore (pacing, ~60–75 min):
+- 20' pipeline IR e limiti (bias, spam, personalizzazione).
+- 15' deep web vs dark web + casi d’uso.
+- 15' AI nella ricerca: vantaggi e rischi.
+- 20' mini-lab: confronto + verifica.
+-->
 
 ---
 transition: slide-up
@@ -1056,6 +1121,13 @@ Tema: un fatto controverso o una statistica circolata online.
 4. Verifica 2 affermazioni chiave aprendo le fonti originali.
 5. Consegna: 10 righe di metodo + 5 link + 2 verifiche.
 
+<!--
+Relatore (conduzione):
+- Dai 2 esempi di “affermazione verificabile” (numero, data, ente, definizione).
+- Insisti su: aprire la fonte primaria (report/dataset) e non fermarsi al riassunto.
+- Valuta: qualità dei link, indipendenza delle fonti, chiarezza del metodo.
+-->
+
 ---
 transition: slide-up
 ---
@@ -1102,6 +1174,10 @@ transition: fade-out
 Prossimo passo: operatori avanzati, strategie replicabili e valutazione critica delle SERP.
 
 <!--
+Relatore (chiusura):
+- Riprendi 3 concetti: pipeline, ranking/personalizzazione, metodo di verifica.
+- Domanda finale: “cosa vi ha fatto cambiare idea tra SERP e AI?”.
+
 Riferimenti di partenza (rielaborati):
 - "Strumenti e Applicazioni del Web" (lezione: "Il problema dell’accesso alle informazioni / motori di ricerca", a.a. 2025-2026), Marco Viviani.
 -->
@@ -1117,6 +1193,13 @@ lessonTone: amber
 
 Dal contenuto alla pagina: struttura, stile, semantica.
 
+<!--
+Relatore:
+- Obiettivo: capire il “contratto” HTML/CSS: struttura vs presentazione.
+- Messaggio: partire da semantica + leggibilità → poi estetica.
+- Anticipa: lab con una pagina piccola ma valida (validator + responsive).
+-->
+
 ---
 transition: fade
 ---
@@ -1128,6 +1211,14 @@ transition: fade
 3. CSS: regole, selettori, box model, layout di base.
 4. Responsive: media query.
 5. Mini-lab: una pagina semplice, ma "ben fatta".
+
+<!--
+Relatore (pacing, ~60–75 min):
+- 20' basi HTML + semantica.
+- 20' basi CSS + box model.
+- 10' responsive.
+- 20' mini-lab + validazione.
+-->
 
 ---
 transition: slide-up
@@ -1528,6 +1619,13 @@ Obiettivo: una pagina informativa "pulita" e verificabile.
 4. Aggiungi una media query per migliorare la lettura su schermi piccoli.
 5. Valida l'HTML e annota 3 correzioni fatte.
 
+<!--
+Relatore (conduzione):
+- Suggerisci un tema comune (es. “scheda corso”, “scheda film”, “scheda museo”) per confrontare risultati.
+- Verifica: heading, `alt`, link descrittivi, e un CSS minimale ma coerente.
+- Se c’è tempo: mostra un errore tipico nel validator e come si corregge.
+-->
+
 ---
 transition: fade-out
 ---
@@ -1537,6 +1635,10 @@ transition: fade-out
 Prossimo passo: HTML semantico + CSS moderno per produrre contenuti leggibili e accessibili.
 
 <!--
+Relatore (chiusura):
+- Riprendi: semantica, separazione HTML/CSS, validazione.
+- Domanda guida: “qual è stata la correzione più utile trovata dal validator?”.
+
 Riferimenti di partenza (rielaborati):
 - "Strumenti e Applicazioni del Web" (lezione: "Verso la definizione di una applicazione Web - HTML e CSS", a.a. 2025-2026), Marco Viviani.
 - "Esercitazione 1 - Ripasso HTML e CSS di base" (slide).
@@ -1554,6 +1656,13 @@ lessonTone: rose
 
 Programmare con l'AI: dall'idea al codice (con metodo).
 
+<!--
+Relatore:
+- Definizione operativa: “programmare guidando un LLM” + iterazioni rapide.
+- Obiettivo: trasformare entusiasmo in metodo (diff, test, sicurezza, qualità).
+- Nota: non è “delegare”, è “collaborare” mantenendo responsabilità.
+-->
+
 ---
 transition: fade
 ---
@@ -1566,6 +1675,15 @@ transition: fade
 4. Strumenti: IDE, estensioni, CLI, agenti.
 5. Metodo pratico: prompt, diff, test, review.
 6. Mini-lab: una feature "vibed", ma verificabile.
+
+<!--
+Relatore (pacing, ~60–75 min):
+- 10' definizione + origine del termine.
+- 15' perché funziona (modelli + tooling).
+- 20' workflow pratico (prompt → patch → verifica).
+- 10' rischi/sicurezza.
+- 20' mini-lab + discussione.
+-->
 
 ---
 transition: slide-up
@@ -1725,6 +1843,13 @@ Obiettivo: aggiungere una piccola feature "verificabile" a una pagina HTML/CSS.
 4. Itera una seconda patch (migliora accessibilità e responsive).
 5. Consegna: file + 5 prompt + 5 decisioni (perché hai accettato/rifiutato).
 
+<!--
+Relatore (conduzione):
+- Pretendi evidenza: ogni patch deve includere “come verifico che funziona”.
+- Fai lavorare su diff piccoli: se la patch è enorme, chiedi di spezzarla.
+- Valuta soprattutto: chiarezza dei prompt, criterio di accettazione/rifiuto, controlli minimi (validator/devtools).
+-->
+
 ---
 transition: slide-up
 ---
@@ -1769,6 +1894,12 @@ transition: fade-out
 
 Prossimo passo: useremo il vibe coding per supportare (non sostituire) metodo, test e pubblicazione.
 
+<!--
+Relatore (chiusura):
+- Riprendi: responsabilità umana, diff/test, rischi (segreti, dipendenze, injection).
+- Domande guida: “qual è stato il miglior prompt?” “che cosa avete rifiutato e perché?”.
+-->
+
 ---
 transition: slide-left
 class: bg-violet-100
@@ -1779,6 +1910,12 @@ lessonTone: violet
 # Lezione 6: Approfondimento HTML
 
 Struttura del documento, `head`, e collegare CSS/JS in modo corretto.
+
+<!--
+Relatore:
+- Obiettivo: mettere ordine in struttura tipica e import di risorse (CSS/JS) senza bug.
+- Focus: `head`, performance e dettagli che spesso “rompono” pagine reali (lang/viewport/defer).
+-->
 
 ---
 transition: fade
@@ -1792,6 +1929,14 @@ transition: fade
 4. Importare JavaScript: `defer`, `async`, moduli.
 5. Struttura file tipica (HTML + CSS + JS).
 6. Mini-lab: pagina + stile + interazione minima.
+
+<!--
+Relatore (pacing, ~60–75 min):
+- 20' struttura documento + `head`.
+- 20' import CSS/JS (defer/async/modules).
+- 15' errori comuni.
+- 20' mini-lab.
+-->
 
 ---
 transition: slide-up
@@ -1996,6 +2141,13 @@ Obiettivo: una pagina *pulita* con stile e una micro-interazione.
 4. JS: un bottone che aggiorna un testo (contatore / stato).
 5. Verifica con validator + prova su schermo piccolo (responsive).
 
+<!--
+Relatore (conduzione):
+- Insisti su: JS non blocca il parsing (`defer`) + markup valido.
+- Output: 3 file separati + 1 screenshot mobile.
+- Extra (se avanza tempo): aggiungi `:focus-visible` e verifica da tastiera.
+-->
+
 ---
 transition: slide-up
 ---
@@ -2018,6 +2170,12 @@ transition: fade-out
 
 Prossimo passo: pattern HTML più avanzati (componenti, template, form accessibili).
 
+<!--
+Relatore (chiusura):
+- Riprendi: struttura pagina, `head`, import CSS/JS e perché conta per performance.
+- Domanda guida: “qual è l’errore più comune che avete riconosciuto nei vostri progetti passati?”.
+-->
+
 ---
 transition: slide-left
 class: bg-teal-100
@@ -2028,6 +2186,12 @@ lessonTone: teal
 # Lezione 7: Approfondimento CSS
 
 Dal selettore al layout: cascade, specificità, flex e grid.
+
+<!--
+Relatore:
+- Obiettivo: CSS prevedibile (cascade/specificità) + layout moderni (flex/grid) + accessibilità.
+- Anticipa: debugging con DevTools (computed, overlay grid/flex).
+-->
 
 ---
 transition: fade
@@ -2043,6 +2207,15 @@ transition: fade
 6. Responsive: media query e "fluid design".
 7. Variabili CSS e theming.
 8. Accessibilità: focus, motion, contrasto.
+
+<!--
+Relatore (pacing, ~60–75 min):
+- 15' cascade/specificità.
+- 20' box model + sizing.
+- 20' layout (flex + grid) + responsive.
+- 10' variabili + accessibilità.
+- 10–15' mini-lab.
+-->
 
 ---
 transition: slide-up
@@ -2275,6 +2448,12 @@ Obiettivo: una pagina con layout responsive e componenti riusabili.
 4. Cura focus e contrasto.
 5. Verifica con DevTools (computed + overlay grid).
 
+<!--
+Relatore (conduzione):
+- Dai un layout target semplice (header + griglia card) e fai vedere 1 esempio con DevTools overlay.
+- Output: 1 screenshot desktop + 1 mobile + elenco 3 regole CSS “chiave”.
+-->
+
 ---
 transition: slide-up
 ---
@@ -2309,6 +2488,12 @@ transition: fade-out
 
 Prossimo passo: CSS moderno applicato a layout reali e componenti accessibili.
 
+<!--
+Relatore (chiusura):
+- Riprendi: cascade/specificità, flex vs grid, responsive, accessibilità (focus/motion).
+- Domande guida: “quando usereste grid e quando flex?”.
+-->
+
 ---
 transition: slide-left
 class: bg-fuchsia-100
@@ -2319,6 +2504,12 @@ lessonTone: fuchsia
 # Lezione 8: Colori
 
 Dal significato alla leggibilità: palette, contrasto e accessibilità.
+
+<!--
+Relatore:
+- Obiettivo: usare il colore come strumento (gerarchia, leggibilità, stati), non come decorazione.
+- Nota: psicologia del colore = indicazioni, non regole universali (contesto culturale).
+-->
 
 ---
 transition: fade
@@ -2333,6 +2524,14 @@ transition: fade
 5. Percezione: Albers ed effetti di contrasto.
 6. Accessibilità: contrasto e “non solo colore”.
 7. Colori nel CSS moderno e workflow pratico.
+
+<!--
+Relatore (pacing, ~60–75 min):
+- 20' basi (componenti, modelli, schemi).
+- 15' percezione (Albers) + errori comuni.
+- 15' accessibilità (WCAG, non solo colore).
+- 15' token CSS + mini-lab.
+-->
 
 ---
 transition: slide-up
@@ -2552,6 +2751,12 @@ transition: slide-left
 4. Aggiungi stati `:hover` e `:focus-visible`.
 5. Verifica il contrasto di testo, link e bottoni.
 
+<!--
+Relatore (conduzione):
+- Suggerisci un set minimo: neutrali (bg/fg/border) + primary + success/warning/danger.
+- Chiedi di dimostrare “non solo colore”: testo + icona o label per stati.
+-->
+
 ---
 transition: slide-up
 ---
@@ -2583,6 +2788,12 @@ transition: fade-out
 
 Prossimo passo: usare colori e contrasto per costruire una UI coerente e accessibile.
 
+<!--
+Relatore (chiusura):
+- Riprendi: contrasto, ruoli nella palette, test “nel componente” e non solo sulla tavolozza.
+- Domanda guida: “quale scelta di colore ha migliorato di più la leggibilità?”.
+-->
+
 ---
 transition: slide-left
 class: bg-cyan-100
@@ -2593,6 +2804,12 @@ lessonTone: cyan
 # Lezione 9: Processo UX (1)
 
 Ricerca e definizione: capire problemi, utenti e obiettivi prima di “disegnare schermate”.
+
+<!--
+Relatore:
+- Obiettivo: mostrare che UX = metodo per ridurre errori, non solo “schermate”.
+- Anticipa: oggi stiamo nella parte “a monte” (brief, ricerca, personas, journey, requirements).
+-->
 
 ---
 transition: fade
@@ -2608,6 +2825,15 @@ transition: fade
 6. User research: metodi e best practice.
 7. Personas, customer journey, user flow.
 8. Business requirements document.
+
+<!--
+Relatore (pacing, ~60–75 min):
+- 15' definizioni + UX/UI/usabilità.
+- 20' brief/product definition + business/competitor/problem.
+- 20' user research + personas + journey.
+- 10' requirements doc.
+- 15' mini-lab.
+-->
 
 ---
 transition: slide-up
@@ -2833,6 +3059,12 @@ Scegli un servizio (es. prenotazione visite, eventi, biblioteca, e‑commerce):
 
 Consegna: 1 pagina di sintesi (testo + schema).
 
+<!--
+Relatore (conduzione):
+- Lavora in coppie: uno scrive, uno fa da “cliente scettico” e chiede chiarimenti.
+- Valuta: chiarezza del problema, coerenza tra persona e requisiti, opportunità nel journey.
+-->
+
 ---
 transition: slide-up
 ---
@@ -2853,6 +3085,12 @@ transition: fade-out
 
 Prossimo passo: architettura dell’informazione, wireframe/prototipi e test di usabilità.
 
+<!--
+Relatore (chiusura):
+- Riprendi: brief → ricerca → personas/journey → requirements.
+- Domanda guida: “quale requisito ‘Must’ è emerso solo dopo il journey?”.
+-->
+
 ---
 transition: slide-left
 class: bg-orange-100
@@ -2863,6 +3101,12 @@ lessonTone: orange
 # Lezione 10: Processo UX (2)
 
 Progettazione e validazione: IA, wireframe, prototipi, principi di usabilità e testing.
+
+<!--
+Relatore:
+- Obiettivo: collegare deliverable “visibili” (IA, wireframe, prototipo) al metodo (test + iterazioni).
+- Nota: oggi vediamo strumenti e principi; la prossima abilità è applicarli a un caso reale.
+-->
 
 ---
 transition: fade
@@ -2878,6 +3122,16 @@ transition: fade
 6. Usabilità: Norman + euristiche di Nielsen.
 7. Usability testing: come farlo bene e spesso.
 8. Trend: AI che supporta (non sostituisce) la UX.
+
+<!--
+Relatore (pacing, ~60–75 min):
+- 15' IA + sitemap.
+- 15' wireframe + best practice.
+- 10' prototipi + iterazioni.
+- 15' Gestalt + usabilità (Norman/Nielsen).
+- 10' usability testing “spesso”.
+- 10' AI nel processo UX + rischi.
+-->
 
 ---
 transition: slide-up
@@ -3123,6 +3377,12 @@ transition: slide-up
 4. Definisci 3 criteri di successo (tempo, errori, completamento).
 5. Fai un mini-test con 1 persona e annota 5 problemi.
 
+<!--
+Relatore (conduzione):
+- Se non c’è tempo per un test reale: fai “guerrilla test” tra gruppi (un gruppo prova l’altro).
+- Output: sitemap + 2 wireframe + lista problemi + 3 azioni correttive.
+-->
+
 ---
 transition: slide-up
 ---
@@ -3143,3 +3403,9 @@ transition: fade-out
 # Domande?
 
 Prossimo passo: applicare il processo UX a un caso reale del corso e documentare scelte e test.
+
+<!--
+Relatore (chiusura):
+- Riprendi: deliverable del processo UX e perché riducono rework.
+- Domanda guida: “quale principio (Norman/Nielsen/Gestalt) vi sembra più pratico da applicare subito?”.
+-->
