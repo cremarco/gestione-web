@@ -32,6 +32,11 @@ const toneToHex: Record<LessonTone, string> = {
 const ribbon = computed(() => {
   const slideIndex = nav.currentSlideNo.value - 1
   const allSlides = nav.slides.value
+  const currentFrontmatter = allSlides[slideIndex]?.meta?.slide?.frontmatter as any
+
+  // Hide the lesson ribbon on lesson cover slides.
+  if (currentFrontmatter?.lessonCover)
+    return null
 
   for (let i = slideIndex; i >= 0; i -= 1) {
     const fm = allSlides[i]?.meta?.slide?.frontmatter as any
@@ -59,4 +64,3 @@ const ribbon = computed(() => {
     </div>
   </div>
 </template>
-

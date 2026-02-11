@@ -30,6 +30,16 @@ Relatore:
 -->
 
 ---
+layout: none
+class: lesson-cover-slide
+lesson: 1
+lessonTone: indigo
+lessonCover: true
+---
+
+<LessonCover :lesson="1" title="Introduzione del corso" tone="indigo" />
+
+---
 transition: slide-up
 class: bg-indigo-100
 lesson: 1
@@ -299,6 +309,16 @@ Relatore (chiusura):
 - Domande guida: “cosa vi preoccupa di più: ricerca, AI o codice?”.
 - Mini-compito: installare Zotero + creare una raccolta “Gestione web” + salvare 3 fonti del proprio interesse.
 -->
+
+---
+layout: none
+class: lesson-cover-slide
+lesson: 2
+lessonTone: sky
+lessonCover: true
+---
+
+<LessonCover :lesson="2" title="Il Browser" tone="sky" />
 
 ---
 transition: slide-left
@@ -771,6 +791,16 @@ Riferimenti di partenza (rielaborati):
 -->
 
 ---
+layout: none
+class: lesson-cover-slide
+lesson: 3
+lessonTone: emerald
+lessonCover: true
+---
+
+<LessonCover :lesson="3" title="I motori di ricerca" tone="emerald" />
+
+---
 transition: slide-left
 class: bg-emerald-100
 lesson: 3
@@ -1181,6 +1211,16 @@ Relatore (chiusura):
 Riferimenti di partenza (rielaborati):
 - "Strumenti e Applicazioni del Web" (lezione: "Il problema dell’accesso alle informazioni / motori di ricerca", a.a. 2025-2026), Marco Viviani.
 -->
+
+---
+layout: none
+class: lesson-cover-slide
+lesson: 4
+lessonTone: amber
+lessonCover: true
+---
+
+<LessonCover :lesson="4" title="Introduzione a HTML e CSS" tone="amber" />
 
 ---
 transition: slide-left
@@ -1646,6 +1686,16 @@ Riferimenti di partenza (rielaborati):
 -->
 
 ---
+layout: none
+class: lesson-cover-slide
+lesson: 5
+lessonTone: rose
+lessonCover: true
+---
+
+<LessonCover :lesson="5" title="Vibe coding" tone="rose" />
+
+---
 transition: slide-left
 class: bg-rose-100
 lesson: 5
@@ -1899,6 +1949,16 @@ Relatore (chiusura):
 - Riprendi: responsabilità umana, diff/test, rischi (segreti, dipendenze, injection).
 - Domande guida: “qual è stato il miglior prompt?” “che cosa avete rifiutato e perché?”.
 -->
+
+---
+layout: none
+class: lesson-cover-slide
+lesson: 6
+lessonTone: violet
+lessonCover: true
+---
+
+<LessonCover :lesson="6" title="Approfondimento HTML" tone="violet" />
 
 ---
 transition: slide-left
@@ -2175,6 +2235,16 @@ Relatore (chiusura):
 - Riprendi: struttura pagina, `head`, import CSS/JS e perché conta per performance.
 - Domanda guida: “qual è l’errore più comune che avete riconosciuto nei vostri progetti passati?”.
 -->
+
+---
+layout: none
+class: lesson-cover-slide
+lesson: 7
+lessonTone: teal
+lessonCover: true
+---
+
+<LessonCover :lesson="7" title="Approfondimento CSS" tone="teal" />
 
 ---
 transition: slide-left
@@ -2495,6 +2565,16 @@ Relatore (chiusura):
 -->
 
 ---
+layout: none
+class: lesson-cover-slide
+lesson: 8
+lessonTone: fuchsia
+lessonCover: true
+---
+
+<LessonCover :lesson="8" title="Colori" tone="fuchsia" />
+
+---
 transition: slide-left
 class: bg-fuchsia-100
 lesson: 8
@@ -2795,6 +2875,16 @@ Relatore (chiusura):
 -->
 
 ---
+layout: none
+class: lesson-cover-slide
+lesson: 9
+lessonTone: cyan
+lessonCover: true
+---
+
+<LessonCover :lesson="9" title="Processo UX (1)" tone="cyan" />
+
+---
 transition: slide-left
 class: bg-cyan-100
 lesson: 9
@@ -3090,6 +3180,16 @@ Relatore (chiusura):
 - Riprendi: brief → ricerca → personas/journey → requirements.
 - Domanda guida: “quale requisito ‘Must’ è emerso solo dopo il journey?”.
 -->
+
+---
+layout: none
+class: lesson-cover-slide
+lesson: 10
+lessonTone: orange
+lessonCover: true
+---
+
+<LessonCover :lesson="10" title="Processo UX (2)" tone="orange" />
 
 ---
 transition: slide-left
