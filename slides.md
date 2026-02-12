@@ -12,14 +12,12 @@ duration: 30min
 ---
 
 # GESTIONE DELL'INFORMAZIONE IN RETE: STRUMENTI E STRATEGIE
-## Università Cattolica
 
-- **Facoltà:** Lettere e Filosofia
-- **Corso:** Laurea triennale in Linguaggi dei Media
-- **Docente:** Cremaschi Marco
-- **Formato:** Lezione + laboratorio
+<div class="absolute top-6 right-8">
+  <img src="./imgs/Logo-UCSC.jpg" alt="Logo Università Cattolica" class="h-14" />
+</div>
 
-Premi spazio per iniziare.
+**Docente:** Cremaschi Marco
 
 <!--
 Relatore:

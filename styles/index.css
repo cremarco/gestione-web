@@ -30,6 +30,29 @@
   }
 }
 
+.slidev-page-1 {
+  background-color: #0a1b3a;
+}
+
+.slidev-page-1 .slidev-layout {
+  color: #ffffff;
+}
+
+.slidev-page-1 .slidev-layout h1,
+.slidev-page-1 .slidev-layout h2,
+.slidev-page-1 .slidev-layout h3,
+.slidev-page-1 .slidev-layout h4,
+.slidev-page-1 .slidev-layout h5,
+.slidev-page-1 .slidev-layout h6,
+.slidev-page-1 .slidev-layout strong {
+  color: #ffffff;
+}
+
+.slidev-page-1 .slidev-layout a {
+  color: #bfdbfe;
+  border-color: rgba(191, 219, 254, 0.7);
+}
+
 .slide-card-title {
   font-size: 1.05rem;
   line-height: 1.35;
