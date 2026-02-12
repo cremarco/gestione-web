@@ -142,6 +142,39 @@
   background: var(--lesson-cover-bg);
 }
 
+.lesson-cover::before,
+.lesson-cover::after {
+  content: "";
+  position: absolute;
+  border-radius: 9999px;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.3;
+  filter: blur(2px);
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(255, 255, 255, 0.32) 0%,
+    rgba(255, 255, 255, 0.12) 30%,
+    rgba(255, 255, 255, 0) 70%
+  );
+}
+
+.lesson-cover::before {
+  width: clamp(20rem, 38vw, 34rem);
+  height: clamp(20rem, 38vw, 34rem);
+  top: -12%;
+  left: -8%;
+  animation: lesson-cover-blob-a 24s ease-in-out infinite;
+}
+
+.lesson-cover::after {
+  width: clamp(16rem, 32vw, 28rem);
+  height: clamp(16rem, 32vw, 28rem);
+  right: -7%;
+  bottom: -15%;
+  animation: lesson-cover-blob-b 28s ease-in-out infinite;
+}
+
 .lesson-cover__content {
   position: relative;
   z-index: 2;
@@ -187,7 +220,29 @@
   }
 }
 
+@keyframes lesson-cover-blob-a {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(2.2rem, 1.5rem, 0) scale(1.08);
+  }
+}
+
+@keyframes lesson-cover-blob-b {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(-2rem, -1.4rem, 0) scale(0.92);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
+  .lesson-cover::before,
+  .lesson-cover::after,
   .lesson-cover__content {
     animation: none !important;
   }
