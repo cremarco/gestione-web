@@ -14,10 +14,12 @@ duration: 30min
 # GESTIONE DELL'INFORMAZIONE IN RETE: STRUMENTI E STRATEGIE
 
 <div class="absolute top-6 right-8">
-  <img src="./imgs/Logo-UCSC.jpg" alt="Logo Università Cattolica" class="h-14" />
+  <img src="./imgs/unicatt-logo.png" alt="Logo Università Cattolica" class="h-14" />
 </div>
 
 **Docente:** Cremaschi Marco
+  
+marco.cremaschi@unicatt.it
 
 <!--
 Relatore:
@@ -44,7 +46,7 @@ lesson: 1
 lessonTone: indigo
 ---
 
-# Lezione 1: Introduzione del corso
+# Introduzione del corso
 
 Questo corso unisce metodo umanistico e strumenti digitali per passare dalla ricerca delle fonti alla pubblicazione di contenuti web affidabili.
 
@@ -88,7 +90,7 @@ transition: fade
 transition: slide-left
 ---
 
-# Lezione 1: Obiettivi del corso
+# Obiettivi del corso
 
 ## Obiettivi formativi
 
@@ -107,7 +109,7 @@ transition: slide-left
 transition: slide-left
 ---
 
-# Lezione 1: Risultati di apprendimento attesi
+# Risultati di apprendimento attesi
 
 ## Alla fine del corso saprai
 
@@ -126,7 +128,7 @@ transition: slide-left
 transition: slide-up
 ---
 
-# Lezione 1: Programma del corso
+# Programma del corso
 
 ## Moduli teorico-metodologici
 
@@ -137,17 +139,17 @@ transition: slide-up
 ## Moduli su AI e fonti
 
 3. AI per la scoperta della letteratura: chatbot, motori semantici, RAG.
-4. Ecosistemi informativi accademici: servizi bibliotecari UCSC, SBN, ACNP, DOAJ, Scopus, Crossref.
+4. Ecosistemi informativi accademici: servizi bibliotecari UCSC, SBN, ACNP, <a href="https://doaj.org/" target="_blank" rel="noopener noreferrer">DOAJ</a>, <a href="https://www.scopus.com/" target="_blank" rel="noopener noreferrer">Scopus</a>, <a href="https://www.crossref.org/" target="_blank" rel="noopener noreferrer">Crossref</a>.
 
 ---
 transition: slide-up
 ---
 
-# Lezione 1: Programma applicativo
+# Programma applicativo
 
 ## Laboratorio
 
-1. Zotero, organizzazione riferimenti, deduplicazione e citazioni.
+1. <a href="https://www.zotero.org/" target="_blank" rel="noopener noreferrer">Zotero</a>, organizzazione riferimenti, deduplicazione e citazioni.
 2. Scrittura digitale con HTML5 semantico e CSS moderno.
 
 
@@ -161,7 +163,7 @@ transition: slide-up
 transition: fade-out
 ---
 
-# Lezione 1: Didattica del corso
+# Didattica del corso
 
 ## Come lavoreremo
 
@@ -181,11 +183,11 @@ transition: fade-out
 transition: slide-left
 ---
 
-# Lezione 1: Metodo e criteri di valutazione
+# Metodo e criteri di valutazione
 
 ## Attività finale
 
-- Elaborato in HTML/CSS da caricare su Blackboard almeno 7 giorni prima dell'esame.
+- Elaborato in HTML/CSS da caricare su Blackboard almeno <InlineHighlight>7 giorni prima dell'esame</InlineHighlight>.
 
 ## Criteri di valutazione
 
@@ -202,7 +204,7 @@ transition: slide-left
 transition: slide-left
 ---
 
-# Lezione 1: Frequentanti e non frequentanti
+# Frequentanti e non frequentanti
 
 
 ## Percorso frequentanti
@@ -223,33 +225,81 @@ transition: slide-left
 transition: fade-out
 ---
 
-# Lezione 1: Calendario lezioni (1/2)
+# Calendario lezioni
 
-- 26 Febbraio, 08:30 - 11:30, SA.006 (Sala PC)
-- 05 Marzo, 08:30 - 11:30, SA.006 (Sala PC)
-- 12 Marzo, 08:30 - 11:30, SA.006 (Sala PC)
-- 19 Marzo, 08:30 - 11:30, SA.006 (Sala PC)
-- 26 Marzo, 08:30 - 11:30, SA.006 (Sala PC)
+<div class="calendar-table-wrap">
+  <table class="calendar-table calendar-table--compact calendar-table--animated">
+    <thead>
+      <tr>
+        <th>Data</th>
+        <th>Orario</th>
+        <th>Aula</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>26 Febbraio</td>
+        <td>08:30 - 11:30</td>
+        <td>SA.006 (Sala PC)</td>
+      </tr>
+      <tr>
+        <td>05 Marzo</td>
+        <td>08:30 - 11:30</td>
+        <td>SA.006 (Sala PC)</td>
+      </tr>
+      <tr>
+        <td>12 Marzo</td>
+        <td>08:30 - 11:30</td>
+        <td>SA.006 (Sala PC)</td>
+      </tr>
+      <tr>
+        <td>19 Marzo</td>
+        <td>08:30 - 11:30</td>
+        <td>SA.006 (Sala PC)</td>
+      </tr>
+      <tr>
+        <td>26 Marzo</td>
+        <td>08:30 - 11:30</td>
+        <td>SA.006 (Sala PC)</td>
+      </tr>
+      <tr>
+        <td>16 Aprile</td>
+        <td>08:30 - 11:30</td>
+        <td>SA.006 (Sala PC)</td>
+      </tr>
+      <tr>
+        <td>23 Aprile</td>
+        <td>08:30 - 11:30</td>
+        <td>SA.006 (Sala PC)</td>
+      </tr>
+      <tr>
+        <td>30 Aprile</td>
+        <td>08:30 - 11:30</td>
+        <td>SA.006 (Sala PC)</td>
+      </tr>
+      <tr>
+        <td>07 Maggio</td>
+        <td>08:30 - 11:30</td>
+        <td>SA.006 (Sala PC)</td>
+      </tr>
+      <tr>
+        <td>14 Maggio</td>
+        <td>08:30 - 11:30</td>
+        <td>SA.006 (Sala PC)</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
----
-transition: fade-out
----
-
-# Lezione 1: Calendario lezioni (2/2)
-
-- 16 Aprile, 08:30 - 11:30, SA.006 (Sala PC)
-- 23 Aprile, 08:30 - 11:30, SA.006 (Sala PC)
-- 30 Aprile, 08:30 - 11:30, SA.006 (Sala PC)
-- 07 Maggio, 08:30 - 11:30, SA.006 (Sala PC)
-- 14 Maggio, 08:30 - 11:30, SA.006 (Sala PC)
-
-> Il calendario può subire aggiornamenti: fa fede la comunicazione ufficiale su Blackboard.
+<InlineNotice>
+  Il calendario può subire aggiornamenti: fa fede la comunicazione ufficiale su <InlineHighlight>Blackboard</InlineHighlight>.
+</InlineNotice>
 
 ---
 transition: slide-up
 ---
 
-# Lezione 1: Strumenti consigliati (1/2)
+# Strumenti consigliati (1/2)
 
 ## Ricerca e verifica
 
@@ -259,14 +309,14 @@ transition: slide-up
 
 ## AI assistita
 
-- ChatGPT, Perplexity, Claude, Elicit.
+- <a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">ChatGPT</a>, <a href="https://www.perplexity.ai/" target="_blank" rel="noopener noreferrer">Perplexity</a>, <a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Claude</a>, <a href="https://elicit.com/" target="_blank" rel="noopener noreferrer">Elicit</a>.
 - Prompt strutturati e controllo delle citazioni.
 
 ---
 transition: slide-up
 ---
 
-# Lezione 1: Strumenti consigliati (2/2)
+# Strumenti consigliati (2/2)
 
 ## Produzione contenuti
 
@@ -285,32 +335,22 @@ transition: slide-left
 
 # Dal web: strumenti e risorse (autorevoli)
 
-- Zotero (reference manager): [zotero.org](https://www.zotero.org/)
-- DOAJ (open access journals): [doaj.org](https://doaj.org/)
-- Crossref (metadati DOI): [crossref.org](https://www.crossref.org/)
+- Zotero (reference manager): <a href="https://www.zotero.org/" target="_blank" rel="noopener noreferrer">zotero.org</a>
+- DOAJ (open access journals): <a href="https://doaj.org/" target="_blank" rel="noopener noreferrer">doaj.org</a>
+- Crossref (metadati DOI): <a href="https://www.crossref.org/" target="_blank" rel="noopener noreferrer">crossref.org</a>
 - Creative Commons (licenze): [creativecommons.org/choose](https://creativecommons.org/choose/)
 - Google Scholar (ricerca accademica): [scholar.google.com](https://scholar.google.com/)
 
 ---
 transition: fade
+layout: center
 ---
 
-# Domande?
-
-Ogni modulo è pensato per essere applicabile a studio, ricerca e lavoro.
-
-**Docente:** Cremaschi Marco
-
-<!--
-Relatore (chiusura):
-- Verifica che sia chiaro: consegna finale, scadenze, criteri.
-- Domande guida: “cosa vi preoccupa di più: ricerca, AI o codice?”.
-- Mini-compito: installare Zotero + creare una raccolta “Gestione web” + salvare 3 fonti del proprio interesse.
--->
+# Domande
 
 ---
 layout: none
-class: lesson-cover-slide
+class: lesson-cover-slide lesson-cover-slide--lesson-2
 lesson: 2
 lessonTone: sky
 lessonCover: true
@@ -325,7 +365,7 @@ lesson: 2
 lessonTone: sky
 ---
 
-# Lezione 2: Il Browser
+# Il Browser
 
 Per capire la rete, dobbiamo capire lo strumento che la rende visibile.
 
@@ -384,27 +424,53 @@ Una pagina moderna aggrega risorse e servizi, spesso da domini diversi:
 - chiamate API (dati)
 - iframe e embed (mappe, social, analytics, ads)
 
-> Implicazione: valutare una fonte significa anche osservare **da dove arriva** ciò che stai vedendo.
+<InlineNotice label="Implicazione">
+  Valutare una fonte significa anche osservare <strong>da dove arriva</strong> ciò che stai vedendo.
+</InlineNotice>
 
 ---
 transition: slide-left
+class: click-pixel-slide
 ---
 
 # Dal click al pixel (mappa mentale)
 
 ```mermaid
+%%{init: {'theme': 'base', 'flowchart': {'curve': 'monotoneX', 'nodeSpacing': 26, 'rankSpacing': 34}} }%%
 flowchart LR
-  A["URL / link"] --> B["DNS"]
-  B --> C["TCP + TLS"]
-  C --> D["HTTP request"]
-  D --> E["HTML response"]
-  E --> F["Parser: DOM"]
-  E --> G["Fetch: CSS/JS/img/font/API"]
-  G --> H["CSSOM + JS runtime"]
-  F --> I["Render tree"]
+  A["URL / link"]
+  B["DNS"]
+  C["TCP + TLS"]
+  D["HTTP request"]
+  E["HTML response"]
+  F["Parser: DOM"]
+  G["Fetch: CSS / JS / img / font / API"]
+  H["CSSOM + JS runtime"]
+  I["Render tree"]
+  J["Layout"]
+  K["Paint + Composite (GPU)"]
+
+  A --> B --> C --> D --> E
+  E --> F
+  E --> G
+  G --> H
+  F --> I
   H --> I
-  I --> J["Layout"]
-  J --> K["Paint + Composite (GPU)"]
+  I --> J --> K
+
+  classDef edge fill:#dbeafe,stroke:#2563eb,color:#0f172a,stroke-width:1.6px;
+  classDef transport fill:#e0e7ff,stroke:#4f46e5,color:#1e1b4b,stroke-width:1.6px;
+  classDef processing fill:#ecfeff,stroke:#0891b2,color:#164e63,stroke-width:1.6px;
+  classDef render fill:#ecfccb,stroke:#65a30d,color:#365314,stroke-width:1.6px;
+  classDef output fill:#ede9fe,stroke:#7c3aed,color:#4c1d95,stroke-width:1.6px;
+
+  class A edge
+  class B,C,D transport
+  class E,F,G,H processing
+  class I,J render
+  class K output
+
+  linkStyle default stroke:#334155,stroke-width:1.8px,opacity:0.9
 ```
 
 ---
@@ -629,7 +695,7 @@ transition: slide-left
 Non serve un "nuovo browser" per avere funzioni agentiche: spesso arrivano come feature.
 
 - **Assistenti integrati** (riassunti, scrittura, ricerca guidata) in alcuni browser mainstream.
-  - Esempi indicativi: Edge (Copilot), Opera (Aria), Brave (Leo), Arc (Max).
+  - Esempi indicativi: <a href="https://www.microsoft.com/edge" target="_blank" rel="noopener noreferrer">Edge (Copilot)</a>, <a href="https://www.opera.com/features/aria" target="_blank" rel="noopener noreferrer">Opera (Aria)</a>, <a href="https://brave.com/leo/" target="_blank" rel="noopener noreferrer">Brave (Leo)</a>, <a href="https://arc.net/" target="_blank" rel="noopener noreferrer">Arc (Max)</a>.
 - **Browser orientati a privacy/produttività** con AI/automazioni (spesso su base Chromium).
 - **Estensioni** che aggiungono estrazione dati, note, citazioni, traduzioni.
 - **Modalità agente**: strumenti che pilotano la navigazione per completare task multi-step.
@@ -805,7 +871,7 @@ lesson: 3
 lessonTone: emerald
 ---
 
-# Lezione 3: I motori di ricerca
+# I motori di ricerca
 
 Dal bisogno informativo alla lista di risultati (e, oggi, alla risposta generata).
 
@@ -1179,7 +1245,7 @@ transition: slide-left
 
 - Google: panoramica e rollout di **AI Overviews**:
   - [AI Overviews in Search (May 2025)](https://blog.google/products-and-platforms/products/search/ai-overview-expansion-may-2025-update/)
-- Microsoft: **Copilot Search** in Bing (approccio "answer + fonti"):
+- Microsoft: <a href="https://www.bing.com/" target="_blank" rel="noopener noreferrer"><strong>Copilot Search</strong></a> in Bing (approccio "answer + fonti"):
   - [Introducing Copilot Search in Bing (Apr 2025)](https://blogs.bing.com/search/April-2025/Introducing-Copilot-Search-in-Bing)
 
 ---
@@ -1190,7 +1256,7 @@ transition: slide-left
 
 - OpenAI API: tool di **web search** (fonti/link):
   - [OpenAI Developers: Web search tool](https://developers.openai.com/docs/guides/tools-web-search)
-- Perplexity: API e approccio "answer engine" (docs):
+- <a href="https://www.perplexity.ai/" target="_blank" rel="noopener noreferrer">Perplexity</a>: API e approccio "answer engine" (docs):
   - [Perplexity API docs (overview)](https://docs.perplexity.ai/docs/getting-started/overview)
 
 ---
@@ -1227,7 +1293,7 @@ lesson: 4
 lessonTone: amber
 ---
 
-# Lezione 4: Introduzione a HTML e CSS
+# Introduzione a HTML e CSS
 
 Dal contenuto alla pagina: struttura, stile, semantica.
 
@@ -1700,7 +1766,7 @@ lesson: 5
 lessonTone: rose
 ---
 
-# Lezione 5: Vibe coding
+# Vibe coding
 
 Programmare con l'AI: dall'idea al codice (con metodo).
 
@@ -1811,7 +1877,7 @@ Cosa cercare:
 - Integrazione con lint/test e terminale.
 - Regole di stile / instructions per progetto.
 
-Esempi (diffusi): VS Code + Copilot, Cursor, JetBrains IDE + AI Assistant, Continue.
+Esempi (diffusi): <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">VS Code</a> + <a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer">Copilot</a>, <a href="https://cursor.com/" target="_blank" rel="noopener noreferrer">Cursor</a>, <a href="https://www.jetbrains.com/ai/" target="_blank" rel="noopener noreferrer">JetBrains IDE + AI Assistant</a>, <a href="https://www.continue.dev/" target="_blank" rel="noopener noreferrer">Continue</a>.
 
 ---
 transition: slide-left
@@ -1825,7 +1891,7 @@ Perché la CLI è utile:
 - Si integra bene con Git, test runner, linter.
 - È comoda per "task agentici" su repo esistenti.
 
-Esempi: Codex CLI, Aider (pair programming), script + make/pnpm/npm.
+Esempi: <a href="https://github.com/openai/codex" target="_blank" rel="noopener noreferrer">Codex CLI</a>, <a href="https://aider.chat/" target="_blank" rel="noopener noreferrer">Aider</a> (pair programming), script + make/pnpm/npm.
 
 ---
 transition: fade
@@ -1917,10 +1983,10 @@ transition: slide-left
 
 # Dal web: strumenti e evidenze
 
-- GitHub Copilot: [quickstart](https://docs.github.com/en/copilot/get-started/quickstart)
-- Cursor: [docs](https://docs.cursor.com/)
-- OpenAI Codex: [repo](https://github.com/openai/codex) • [docs](https://developers.openai.com/codex)
-- Aider: [sito](https://aider.chat/)
+- GitHub Copilot: <a href="https://docs.github.com/en/copilot/get-started/quickstart" target="_blank" rel="noopener noreferrer">quickstart</a>
+- Cursor: <a href="https://docs.cursor.com/" target="_blank" rel="noopener noreferrer">docs</a>
+- OpenAI Codex: <a href="https://github.com/openai/codex" target="_blank" rel="noopener noreferrer">repo</a> • <a href="https://developers.openai.com/codex" target="_blank" rel="noopener noreferrer">docs</a>
+- Aider: <a href="https://aider.chat/" target="_blank" rel="noopener noreferrer">sito</a>
 - METR (2025): [studio su produttività](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/)
 
 ---
@@ -1965,7 +2031,7 @@ lesson: 6
 lessonTone: violet
 ---
 
-# Lezione 6: Approfondimento HTML
+# Approfondimento HTML
 
 Struttura del documento, `head`, e collegare CSS/JS in modo corretto.
 
@@ -2251,7 +2317,7 @@ lesson: 7
 lessonTone: teal
 ---
 
-# Lezione 7: Approfondimento CSS
+# Approfondimento CSS
 
 Dal selettore al layout: cascade, specificità, flex e grid.
 
@@ -2579,7 +2645,7 @@ lesson: 8
 lessonTone: fuchsia
 ---
 
-# Lezione 8: Colori
+# Colori
 
 Dal significato alla leggibilità: palette, contrasto e accessibilità.
 
@@ -2889,7 +2955,7 @@ lesson: 9
 lessonTone: cyan
 ---
 
-# Lezione 9: Processo UX (1)
+# Processo UX (1)
 
 Ricerca e definizione: capire problemi, utenti e obiettivi prima di “disegnare schermate”.
 
@@ -3196,7 +3262,7 @@ lesson: 10
 lessonTone: orange
 ---
 
-# Lezione 10: Processo UX (2)
+# Processo UX (2)
 
 Progettazione e validazione: IA, wireframe, prototipi, principi di usabilità e testing.
 

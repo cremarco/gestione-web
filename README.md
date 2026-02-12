@@ -19,6 +19,13 @@ Edit the [slides.md](./slides.md) to see the changes.
 
 Learn more about Slidev at the [documentation](https://sli.dev/).
 
+## Barra di avanzamento lezione
+
+- Ogni slide eredita la lezione corrente dal frontmatter (`lesson`) e il relativo colore (`lessonTone`).
+- In basso viene mostrata una barra di avanzamento che riparte a ogni nuova lezione.
+- La barra usa il colore della lezione e mostra solo la posizione corrente (`slide corrente / slide totali della lezione`), ad esempio `15/15`.
+- La logica è in `global-bottom.vue` e lo stile in `styles/index.css`.
+
 ## Tailwind + Heroicons
 
 - Tailwind CSS e configurato in `styles/index.css`.
