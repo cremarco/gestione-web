@@ -4,6 +4,8 @@
 .DS_Store
 **/node_modules/
 **/dist/
+/index.html
+lessons slides/Booklet_CVDI_12_2024.pdf
 coverage/
 *.log
 npm-debug.log*

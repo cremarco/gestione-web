@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "daisyui";
 
 @source "../slides.md";
 @source "../components/**/*.{vue,js,ts}";
@@ -233,6 +234,34 @@
   background-image: none;
 }
 
+.slidev-page:not(.slidev-page-1):not(:has(.slidev-layout.lesson-cover-slide)):has(.slidev-layout.qna-slide) {
+  background-color: var(--course-bg) !important;
+}
+
+.slidev-page:not(.slidev-page-1):not(:has(.slidev-layout.lesson-cover-slide)):has(.slidev-layout.qna-slide)
+  .slidev-layout.qna-slide {
+  background-color: transparent !important;
+  isolation: isolate;
+}
+
+.slidev-page:not(.slidev-page-1):not(:has(.slidev-layout.lesson-cover-slide)):has(.slidev-layout.qna-slide)::before {
+  content: "";
+  position: absolute;
+  inset: -36%;
+  pointer-events: none;
+  z-index: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='%23cbd5e1'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  opacity: 0.3;
+  background-size: 76px 76px;
+  background-position: 0 0;
+  animation: qna-question-drift-a 18s linear infinite;
+}
+
+.slidev-layout.qna-slide > h1 {
+  text-shadow: 0 8px 18px rgba(15, 23, 42, 0.12);
+}
+
 .slide-card-title {
   font-size: 1.05rem;
   line-height: 1.35;
@@ -398,7 +427,7 @@
   font-weight: 700;
   color: inherit;
   --inline-highlight-fill: var(--course-lime);
-  background-image: linear-gradient(180deg, transparent 54%, var(--inline-highlight-fill) 54%);
+  background-image: linear-gradient(180deg, transparent 48%, var(--inline-highlight-fill) 48%);
   background-repeat: no-repeat;
   background-position: left top;
   background-size: 0% 100%;
@@ -632,24 +661,6 @@
   height: auto;
   max-height: 100%;
   filter: drop-shadow(0 16px 24px rgba(15, 23, 42, 0.12));
-  transform-origin: center;
-  animation: click-pixel-diagram-in 620ms cubic-bezier(0.22, 1, 0.36, 1) both;
-}
-
-.slidev-layout.click-pixel-slide > .mermaid :is(.edgePath path, .flowchart-link) {
-  stroke-dasharray: 1200;
-  stroke-dashoffset: 1200;
-  animation: click-pixel-edge-draw 1.2s ease-out 240ms forwards;
-}
-
-.slidev-layout.click-pixel-slide > .mermaid :is(.node rect, .node polygon, .node ellipse, .node path, .node circle) {
-  opacity: 0;
-  animation: click-pixel-node-in 460ms ease-out 320ms forwards;
-}
-
-.slidev-layout.click-pixel-slide > .mermaid :is(.nodeLabel, .label) {
-  opacity: 0;
-  animation: click-pixel-label-in 420ms ease-out 430ms forwards;
 }
 
 @media (max-width: 960px) {
@@ -723,6 +734,15 @@
   }
 }
 
+@keyframes qna-question-drift-a {
+  0% {
+    background-position: -76px -76px;
+  }
+  100% {
+    background-position: 76px 76px;
+  }
+}
+
 @keyframes lesson-cover-blob-a {
   0%,
   100% {
@@ -779,41 +799,6 @@
   }
 }
 
-@keyframes click-pixel-diagram-in {
-  0% {
-    opacity: 0;
-    transform: translate3d(0, 16px, 0) scale(0.98);
-  }
-  100% {
-    opacity: 1;
-    transform: translate3d(0, 0, 0) scale(1);
-  }
-}
-
-@keyframes click-pixel-edge-draw {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-@keyframes click-pixel-node-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes click-pixel-label-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 @keyframes inline-highlight-reveal-ltr {
   0% {
     background-size: 0% 100%;
@@ -830,12 +815,19 @@
   }
 }
 
+@media (max-width: 900px) {
+}
+
 @media (prefers-reduced-motion: reduce) {
   .slidev-page::before,
   .slidev-page::after,
   .lesson-cover::before,
   .lesson-cover::after,
   .lesson-cover__content {
+    animation: none !important;
+  }
+
+  .slidev-page:not(.slidev-page-1):not(:has(.slidev-layout.lesson-cover-slide)):has(.slidev-layout.qna-slide)::before {
     animation: none !important;
   }
 
@@ -846,13 +838,4 @@
     transform: none;
   }
 
-  .slidev-layout.click-pixel-slide > .mermaid > svg,
-  .slidev-layout.click-pixel-slide > .mermaid :is(.edgePath path, .flowchart-link),
-  .slidev-layout.click-pixel-slide > .mermaid :is(.node rect, .node polygon, .node ellipse, .node path, .node circle),
-  .slidev-layout.click-pixel-slide > .mermaid :is(.nodeLabel, .label) {
-    animation: none !important;
-    opacity: 1 !important;
-    stroke-dashoffset: 0 !important;
-    transform: none !important;
-  }
 }

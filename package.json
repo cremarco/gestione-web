@@ -13,11 +13,14 @@
     "@slidev/theme-apple-basic": "^0.25.1",
     "@slidev/theme-default": "latest",
     "@slidev/theme-seriph": "latest",
-    "vue": "^3.5.27"
+    "echarts": "^6.0.0",
+    "vue": "^3.5.27",
+    "vue-echarts": "^8.0.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.18",
     "autoprefixer": "^10.4.24",
+    "daisyui": "^5.5.18",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.18"
   }
