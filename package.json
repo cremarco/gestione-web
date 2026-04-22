@@ -3,8 +3,12 @@
   "type": "module",
   "private": true,
   "scripts": {
+    "prebuild": "node scripts/build-daisy-css.mjs",
     "build": "slidev build",
+    "build:daisy-css": "node scripts/build-daisy-css.mjs",
+    "predev": "node scripts/build-daisy-css.mjs",
     "dev": "slidev --open",
+    "preexport": "node scripts/build-daisy-css.mjs",
     "export": "slidev export"
   },
   "dependencies": {
@@ -21,6 +25,7 @@
     "@tailwindcss/postcss": "^4.1.18",
     "autoprefixer": "^10.4.24",
     "daisyui": "^5.5.18",
+    "playwright-chromium": "^1.58.2",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.18"
   }

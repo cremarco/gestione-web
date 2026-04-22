@@ -1,10 +1,8 @@
-@import "tailwindcss";
-@plugin "daisyui";
-
-@source "../slides.md";
-@source "../components/**/*.{vue,js,ts}";
-@source "../pages/**/*.{md,vue}";
-@source "../snippets/**/*.{js,ts,md}";
+/*
+ * Precompiled Tailwind + daisyUI bundle.
+ * Regenerate with: `pnpm run build:daisy-css`
+ */
+@import "/styles/daisy.generated.css";
 
 @layer base {
   :root {
@@ -36,30 +34,31 @@
     min-height: 100%;
   }
 
-  .slidev-layout :is(ul, ol) {
+  /* Keep default list styling only for plain markdown lists, not daisyUI lists/components. */
+  .slidev-layout :is(ul, ol):not([class]) {
     margin-block: 0.65em;
     padding-inline-start: 1.3em;
     list-style-position: outside;
   }
 
-  .slidev-layout ul {
+  .slidev-layout ul:not([class]) {
     list-style-type: disc;
   }
 
-  .slidev-layout ol {
+  .slidev-layout ol:not([class]) {
     list-style-type: decimal;
   }
 
-  .slidev-layout :is(ul, ol) > li {
+  .slidev-layout :is(ul, ol):not([class]) > li {
     margin-block: 0.2em;
     padding-inline-start: 0.12em;
   }
 
-  .slidev-layout :is(ul, ol) > li::marker {
+  .slidev-layout :is(ul, ol):not([class]) > li::marker {
     color: var(--course-lime);
   }
 
-  .slidev-layout :is(ul, ol) :is(ul, ol) {
+  .slidev-layout :is(ul, ol):not([class]) :is(ul, ol):not([class]) {
     margin-block: 0.35em;
   }
 
@@ -116,8 +115,8 @@
   }
 
   /* Override Slidev dashed border links with a tighter text underline. */
-  .slidev-layout a:not(.slidev-icon-btn),
-  .slidev-layout a:not(.slidev-icon-btn):hover {
+  .slidev-layout a:not(.slidev-icon-btn):not(.link):not(.btn):not(.dui-link):not(.dui-btn),
+  .slidev-layout a:not(.slidev-icon-btn):not(.link):not(.btn):not(.dui-link):not(.dui-btn):hover {
     border: 0 !important;
     border-bottom: 0 !important;
     text-decoration-line: underline;
@@ -128,10 +127,11 @@
     text-decoration-skip-ink: none;
   }
 
-  .slidev-page:not(.slidev-page-1) .slidev-layout a:not(.slidev-icon-btn):is(:hover, :focus-visible) {
+  .slidev-page:not(.slidev-page-1) .slidev-layout a:not(.slidev-icon-btn):not(.link):not(.btn):not(.dui-link):not(.dui-btn):is(:hover, :focus-visible) {
     color: var(--course-indigo);
     text-decoration-color: var(--course-indigo);
   }
+
 }
 
 .slidev-page::before,

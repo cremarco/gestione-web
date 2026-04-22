@@ -851,7 +851,7 @@ transition: slide-left
 | **Orion** | Motore WebKit con supporto a estensioni Chrome/Firefox | Utenti Apple che vogliono più estensioni |
 | **Browsh** | Navigazione nel terminale (utile anche via SSH) | Connessioni lente o accesso remoto |
 
-<div class="alert alert-info mt-3">
+<div class="dui-scope dui-alert dui-alert-info mt-3">
   <span>
     "Particolare" non significa automaticamente "migliore": dipende da obiettivo, rischio e contesto d'uso.
   </span>
@@ -4304,533 +4304,1254 @@ Relatore (chiusura):
 -->
 
 ---
-transition: slide-up
+layout: none
+class: lesson-cover-slide
+lesson: 11
+lessonTone: cyan
+lessonCover: true
 ---
 
-# Appendice demo daisyUI
+<section class="dui-scope dui-hero min-h-[70vh] rounded-box bg-base-200">
+  <div class="dui-hero-content text-center">
+    <div class="max-w-2xl">
+      <span class="dui-badge dui-badge-primary dui-badge-lg">Lezione 11</span>
+      <h1 class="text-5xl font-bold mt-4">daisyUI Componenti Selezionati</h1>
+      <p class="py-4 opacity-80">Una slide operativa per ciascun componente richiesto.</p>
+      <button class="dui-btn dui-btn-primary dui-btn-sm">Avvia demo</button>
+    </div>
+  </div>
+</section>
 
-<div class="alert alert-info alert-soft mt-4 text-sm">
-  <span>Demo rapida dei componenti daisyUI disponibili nel progetto (v5.x), aggiunta in fondo alla presentazione.</span>
-</div>
-
-<div class="mt-6 grid grid-cols-2 gap-4 text-sm">
-  <div class="card card-border bg-base-100">
-    <div class="card-body p-4">
-      <h3 class="card-title text-base">Form e controlli</h3>
-      <p>`button`, `input`, `textarea`, `select`, `file-input`, `checkbox`, `radio`, `toggle`, `range`, `rating`, `validator`</p>
-    </div>
-  </div>
-  <div class="card card-border bg-base-100">
-    <div class="card-body p-4">
-      <h3 class="card-title text-base">Feedback e stato</h3>
-      <p>`alert`, `badge`, `status`, `progress`, `radial-progress`, `loading`, `skeleton`, `countdown`, `tooltip`, `toast`</p>
-    </div>
-  </div>
-  <div class="card card-border bg-base-100">
-    <div class="card-body p-4">
-      <h3 class="card-title text-base">Layout e navigazione</h3>
-      <p>`card`, `navbar`, `footer`, `menu`, `tabs`, `breadcrumbs`, `steps`, `timeline`, `table`, `list`, `stat`, `drawer`, `dock`, `fab`</p>
-    </div>
-  </div>
-  <div class="card card-border bg-base-100">
-    <div class="card-body p-4">
-      <h3 class="card-title text-base">Media e speciali</h3>
-      <p>`carousel`, `chat`, `mockup`, `diff`, `hero`, `mask`, `stack`, `hover-3d`, `hover-gallery`, `text-rotate`, `calendar`</p>
-    </div>
-  </div>
-</div>
+<!--
+Relatore:
+- Obiettivo: allineare esempi pratici ai componenti della documentazione daisyUI.
+- Messaggio chiave: ogni componente ha un caso d'uso specifico, non solo estetico.
+-->
 
 ---
-transition: slide-up
+transition: slide-left
+class: bg-cyan-100
+lesson: 11
+lessonTone: cyan
 ---
 
-# Demo daisyUI: form base
+# Lezione 11 · Mappa componenti
 
-<div class="grid grid-cols-2 gap-4 text-sm mt-2">
-  <fieldset class="fieldset bg-base-100 border border-base-300 rounded-box p-3">
-    <legend class="fieldset-legend">Campi</legend>
-
-    <label class="label">Input</label>
-    <input class="input input-sm w-full" placeholder="Nome browser" />
-
-    <label class="label mt-2">Textarea</label>
-    <textarea class="textarea textarea-sm w-full" rows="2" placeholder="Note"></textarea>
-
-    <label class="label mt-2">Select</label>
-    <select class="select select-sm w-full">
-      <option>Chromium</option>
-      <option>Gecko</option>
-      <option>WebKit</option>
-    </select>
-
-    <label class="label mt-2">File input</label>
-    <input type="file" class="file-input file-input-sm w-full" />
-  </fieldset>
-
-  <div class="space-y-3">
-    <div class="card card-border bg-base-100">
-      <div class="card-body p-3">
-        <h3 class="card-title text-base">Button</h3>
-        <div class="flex flex-wrap gap-2">
-          <button class="btn btn-sm btn-primary">Primario</button>
-          <button class="btn btn-sm btn-secondary">Secondario</button>
-          <button class="btn btn-sm btn-outline">Outline</button>
-          <button class="btn btn-sm btn-soft">Soft</button>
-          <button class="btn btn-sm btn-ghost">Ghost</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="card card-border bg-base-100">
-      <div class="card-body p-3">
-        <h3 class="card-title text-base">Link e validator</h3>
-        <a class="link link-primary text-sm" href="https://daisyui.com" target="_blank" rel="noopener noreferrer">Documentazione daisyUI</a>
-        <input class="input input-sm validator mt-2 w-full" type="email" required placeholder="email@esempio.it" />
-        <p class="validator-hint">Inserisci un indirizzo email valido</p>
-      </div>
+<div class="dui-scope mt-3">
+  <div class="rounded-box border border-base-300 bg-base-100 p-4 text-sm shadow-sm">
+    <h3 class="text-base font-semibold">Componenti in scaletta (14)</h3>
+    <p>Avatar, Badge, Card, Kbd, List, Stat, Table, Timeline, Link, Steps, Mockup Browser, Mockup Code, Mockup Phone, Mockup Window.</p>
+    <div class="dui-alert dui-alert-info dui-alert-soft mt-2">
+      <span>Riferimento: <a href="https://daisyui.com/components/" target="_blank" rel="noopener noreferrer">daisyui.com/components</a>.</span>
     </div>
   </div>
 </div>
 
+<!--
+Relatore:
+- Strategia: leggere le slide come catalogo di pattern riusabili.
+- Azione: scegliere 2 componenti e integrarli nel mini-progetto del corso.
+-->
+
 ---
-transition: slide-up
+transition: fade
+lesson: 11
+lessonTone: cyan
 ---
 
-# Demo daisyUI: selezione
+# Avatar
 
-<div class="grid grid-cols-2 gap-4 mt-2 text-sm">
-  <div class="card card-border bg-base-100">
-    <div class="card-body p-4 space-y-3">
-      <h3 class="card-title text-base">Checkbox, radio, toggle</h3>
-      <div class="flex items-center gap-3">
-        <input type="checkbox" checked class="checkbox checkbox-primary checkbox-sm" />
-        <span>Estensioni abilitate</span>
+<div class="dui-scope mt-3 space-y-3">
+  <div class="dui-avatar">
+    <div class="w-24 rounded">
+      <img src="./imgs/batperson@192.webp" alt="Avatar base" />
+    </div>
+  </div>
+  <div class="dui-avatar-group -space-x-6">
+    <div class="dui-avatar">
+      <div class="w-12">
+        <img src="./imgs/batperson@192.webp" alt="Avatar gruppo 1" />
       </div>
-      <div class="flex items-center gap-3">
-        <input type="radio" class="radio radio-primary radio-sm" checked />
-        <span>Radio demo</span>
+    </div>
+    <div class="dui-avatar">
+      <div class="w-12">
+        <img src="./imgs/batperson@192.webp" alt="Avatar gruppo 2" />
       </div>
-      <div class="flex items-center gap-3">
-        <input type="checkbox" class="toggle toggle-sm toggle-primary" checked />
-        <span>Protezione tracking</span>
+    </div>
+    <div class="dui-avatar">
+      <div class="w-12">
+        <img src="./imgs/batperson@192.webp" alt="Avatar gruppo 3" />
+      </div>
+    </div>
+    <div class="dui-avatar dui-avatar-placeholder">
+      <div class="bg-neutral text-neutral-content w-12">
+        <span>+99</span>
       </div>
     </div>
   </div>
-
-  <div class="card card-border bg-base-100">
-    <div class="card-body p-4 space-y-4">
-      <h3 class="card-title text-base">Range e rating</h3>
-      <input type="range" min="0" max="100" value="70" class="range range-primary range-sm" />
-
-      <div class="rating rating-sm">
-        <input type="radio" name="rating-demo" class="rating-hidden" />
-        <input type="radio" name="rating-demo" class="mask mask-star bg-orange-400" checked />
-        <input type="radio" name="rating-demo" class="mask mask-star bg-orange-400" />
-        <input type="radio" name="rating-demo" class="mask mask-star bg-orange-400" />
-        <input type="radio" name="rating-demo" class="mask mask-star bg-orange-400" />
-        <input type="radio" name="rating-demo" class="mask mask-star bg-orange-400" />
-      </div>
-    </div>
-  </div>
+  <p class="text-xs opacity-70">Docs: <a href="https://daisyui.com/components/avatar/" target="_blank" rel="noopener noreferrer">Avatar</a></p>
 </div>
 
 ---
 transition: slide-up
+lesson: 11
+lessonTone: cyan
 ---
 
-# Demo daisyUI: feedback e stato
+# Badge
 
-<div class="grid grid-cols-2 gap-4 mt-2 text-sm">
-  <div class="space-y-3">
-    <div class="alert alert-success alert-soft">
-      <span>Dati sincronizzati correttamente.</span>
-    </div>
+<div class="dui-scope mt-3 space-y-3">
+  <div class="flex flex-wrap gap-2">
+    <div class="dui-badge">default</div>
+    <div class="dui-badge dui-badge-primary">primary</div>
+    <div class="dui-badge dui-badge-secondary">secondary</div>
+    <div class="dui-badge dui-badge-accent">accent</div>
+    <div class="dui-badge dui-badge-neutral">neutral</div>
+  </div>
+  <div class="flex flex-wrap gap-2">
+    <div class="dui-badge dui-badge-outline">default</div>
+    <div class="dui-badge dui-badge-outline dui-badge-primary">primary</div>
+    <div class="dui-badge dui-badge-outline dui-badge-secondary">secondary</div>
+    <div class="dui-badge dui-badge-outline dui-badge-accent">accent</div>
+  </div>
+  <p class="text-xs opacity-70">Docs: <a href="https://daisyui.com/components/badge/" target="_blank" rel="noopener noreferrer">Badge</a></p>
+</div>
 
-    <div class="card card-border bg-base-100">
-      <div class="card-body p-3 space-y-3">
-        <div class="flex items-center gap-2">
-          <span class="badge badge-primary">Badge</span>
-          <span class="status status-success status-sm"></span>
-          <span class="text-xs">Servizio attivo</span>
-          <span class="kbd kbd-sm ml-auto">Ctrl + K</span>
-        </div>
+---
+transition: slide-left
+lesson: 11
+lessonTone: cyan
+---
 
-        <progress class="progress progress-primary w-full" value="65" max="100"></progress>
+# Card
 
-        <div class="flex items-center gap-4">
-          <div class="radial-progress text-primary" style="--value:72; --size:3rem;" aria-label="72%">72%</div>
-          <div class="countdown font-mono text-xl">
-            <span style="--value:1;"></span>:
-            <span style="--value:2;"></span>:
-            <span style="--value:9;"></span>
+<div class="dui-scope mt-3 space-y-3">
+  <div class="grid gap-4 xl:grid-cols-2 items-start">
+    <div data-dui-theme="light" class="dui-scope rounded-box bg-base-200 text-base-content p-4 space-y-3">
+      <span class="dui-badge dui-badge-outline">light</span>
+        <div class="dui-card bg-base-100 w-96 shadow-sm">
+          <figure>
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+              alt="Shoes" />
+          </figure>
+          <div class="dui-card-body">
+            <h2 class="dui-card-title">Card Title</h2>
+            <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+            <div class="dui-card-actions justify-end">
+              <button class="dui-btn dui-btn-primary">Buy Now</button>
+            </div>
           </div>
-          <span class="loading loading-spinner loading-md text-secondary"></span>
         </div>
-      </div>
+    </div>
+    <div data-dui-theme="dark" class="dui-scope rounded-box bg-base-200 text-base-content p-4 space-y-3">
+      <span class="dui-badge dui-badge-outline">dark</span>
+        <div class="dui-card bg-base-100 w-96 shadow-sm">
+          <figure>
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+              alt="Shoes" />
+          </figure>
+          <div class="dui-card-body">
+            <h2 class="dui-card-title">Card Title</h2>
+            <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+            <div class="dui-card-actions justify-end">
+              <button class="dui-btn dui-btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
     </div>
   </div>
+  <p class="text-xs opacity-70">Docs: <a href="https://daisyui.com/components/card/" target="_blank" rel="noopener noreferrer">Card</a></p>
+</div>
 
-  <div class="space-y-3">
-    <div class="tooltip tooltip-left" data-tip="Tooltip daisyUI">
-      <button class="btn btn-sm btn-outline">Passa qui</button>
+---
+transition: fade
+lesson: 11
+lessonTone: cyan
+---
+
+# Pricing Card
+
+<div class="dui-scope mt-3 space-y-3">
+  <div class="grid gap-4 xl:grid-cols-2 items-start">
+    <div data-dui-theme="light" class="dui-scope rounded-box bg-base-200 text-base-content p-4 space-y-3">
+      <span class="dui-badge dui-badge-outline">light</span>
+        <div class="dui-card w-96 bg-base-100 shadow-sm">
+          <div class="dui-card-body">
+            <span class="dui-badge dui-badge-xs dui-badge-warning">Most Popular</span>
+            <div class="flex justify-between">
+              <h2 class="text-3xl font-bold">Premium</h2>
+              <span class="text-xl">$29/mo</span>
+            </div>
+            <ul class="mt-6 flex flex-col gap-2 text-xs">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                <span>High-resolution image generation</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                <span>Customizable style templates</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                <span>Batch processing capabilities</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                <span>AI-driven image enhancements</span>
+              </li>
+              <li class="opacity-50">
+                <svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-base-content/50" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                <span class="line-through">Seamless cloud integration</span>
+              </li>
+              <li class="opacity-50">
+                <svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-base-content/50" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                <span class="line-through">Real-time collaboration tools</span>
+              </li>
+            </ul>
+            <div class="mt-6">
+              <button class="dui-btn dui-btn-primary dui-btn-block">Subscribe</button>
+            </div>
+          </div>
+        </div>
     </div>
-
-    <div class="card card-border bg-base-100">
-      <div class="card-body p-3">
-        <h3 class="card-title text-base">Skeleton</h3>
-        <div class="skeleton h-3 w-5/6"></div>
-        <div class="skeleton h-3 w-2/3"></div>
-        <div class="skeleton h-3 w-4/6"></div>
-      </div>
+    <div data-dui-theme="dark" class="dui-scope rounded-box bg-base-200 text-base-content p-4 space-y-3">
+      <span class="dui-badge dui-badge-outline">dark</span>
+        <div class="dui-card w-96 bg-base-100 shadow-sm">
+          <div class="dui-card-body">
+            <span class="dui-badge dui-badge-xs dui-badge-warning">Most Popular</span>
+            <div class="flex justify-between">
+              <h2 class="text-3xl font-bold">Premium</h2>
+              <span class="text-xl">$29/mo</span>
+            </div>
+            <ul class="mt-6 flex flex-col gap-2 text-xs">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                <span>High-resolution image generation</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                <span>Customizable style templates</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                <span>Batch processing capabilities</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                <span>AI-driven image enhancements</span>
+              </li>
+              <li class="opacity-50">
+                <svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-base-content/50" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                <span class="line-through">Seamless cloud integration</span>
+              </li>
+              <li class="opacity-50">
+                <svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-base-content/50" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                <span class="line-through">Real-time collaboration tools</span>
+              </li>
+            </ul>
+            <div class="mt-6">
+              <button class="dui-btn dui-btn-primary dui-btn-block">Subscribe</button>
+            </div>
+          </div>
+        </div>
     </div>
   </div>
+  <p class="text-xs opacity-70">Docs: <a href="https://daisyui.com/components/card/" target="_blank" rel="noopener noreferrer">Pricing Card</a></p>
 </div>
 
 ---
 transition: slide-up
+lesson: 11
+lessonTone: cyan
 ---
 
-# Demo daisyUI: visual e contenitori
+# Card sizes · XS
 
-<div class="grid grid-cols-3 gap-4 mt-2 text-sm">
-  <div class="card card-border bg-base-100">
-    <div class="card-body p-3 items-center text-center">
-      <div class="avatar">
-        <div class="w-14 rounded-full">
-          <img src="./imgs/unicatt-logo.png" alt="Avatar demo" />
+<div class="dui-scope mt-3 space-y-3">
+  <div class="grid gap-4 xl:grid-cols-2 items-start">
+    <div data-dui-theme="light" class="dui-scope rounded-box bg-base-200 text-base-content p-4 space-y-3">
+      <span class="dui-badge dui-badge-outline">light</span>
+        <div class="dui-card w-96 bg-base-100 dui-card-xs shadow-sm">
+          <div class="dui-card-body">
+            <h2 class="dui-card-title">Xsmall Card</h2>
+            <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+            <div class="dui-card-actions justify-end">
+              <button class="dui-btn dui-btn-primary">Buy Now</button>
+            </div>
+          </div>
         </div>
-      </div>
-      <h3 class="card-title text-base">Avatar</h3>
-      <p class="text-xs opacity-70">Card + avatar</p>
+    </div>
+    <div data-dui-theme="dark" class="dui-scope rounded-box bg-base-200 text-base-content p-4 space-y-3">
+      <span class="dui-badge dui-badge-outline">dark</span>
+        <div class="dui-card w-96 bg-base-100 dui-card-xs shadow-sm">
+          <div class="dui-card-body">
+            <h2 class="dui-card-title">Xsmall Card</h2>
+            <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+            <div class="dui-card-actions justify-end">
+              <button class="dui-btn dui-btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
     </div>
   </div>
+  <p class="text-xs opacity-70">Docs: <a href="https://daisyui.com/components/card/" target="_blank" rel="noopener noreferrer">Card sizes</a></p>
+</div>
 
-  <div class="card card-border bg-base-100">
-    <div class="card-body p-3">
-      <h3 class="card-title text-base">Indicator + divider</h3>
-      <div class="indicator mx-auto">
-        <span class="indicator-item badge badge-secondary">5</span>
-        <button class="btn btn-sm">Inbox</button>
-      </div>
-      <div class="divider my-1">oppure</div>
-      <button class="btn btn-sm btn-soft">Archivio</button>
-    </div>
-  </div>
+---
+transition: slide-left
+lesson: 11
+lessonTone: cyan
+---
 
-  <div class="card card-border bg-base-100">
-    <div class="card-body p-3">
-      <h3 class="card-title text-base">Stack + mask</h3>
-      <div class="stack">
-        <div class="text-center border border-base-300 bg-base-200 rounded-box p-2">A</div>
-        <div class="text-center border border-base-300 bg-base-200 rounded-box p-2">B</div>
-        <div class="text-center border border-base-300 bg-base-200 rounded-box p-2">C</div>
-      </div>
-      <img class="mask mask-squircle w-16 h-16 mx-auto mt-2" src="./imgs/unicatt-logo.png" alt="Mask demo" />
+# Card sizes · SM
+
+<div class="dui-scope mt-3 space-y-3">
+  <div class="grid gap-4 xl:grid-cols-2 items-start">
+    <div data-dui-theme="light" class="dui-scope rounded-box bg-base-200 text-base-content p-4 space-y-3">
+      <span class="dui-badge dui-badge-outline">light</span>
+        <div class="dui-card w-96 bg-base-100 dui-card-sm shadow-sm">
+          <div class="dui-card-body">
+            <h2 class="dui-card-title">Small Card</h2>
+            <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+            <div class="dui-card-actions justify-end">
+              <button class="dui-btn dui-btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div data-dui-theme="dark" class="dui-scope rounded-box bg-base-200 text-base-content p-4 space-y-3">
+      <span class="dui-badge dui-badge-outline">dark</span>
+        <div class="dui-card w-96 bg-base-100 dui-card-sm shadow-sm">
+          <div class="dui-card-body">
+            <h2 class="dui-card-title">Small Card</h2>
+            <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+            <div class="dui-card-actions justify-end">
+              <button class="dui-btn dui-btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
     </div>
   </div>
+  <p class="text-xs opacity-70">Docs: <a href="https://daisyui.com/components/card/" target="_blank" rel="noopener noreferrer">Card sizes</a></p>
+</div>
+
+---
+transition: fade
+lesson: 11
+lessonTone: cyan
+---
+
+# Card sizes · MD
+
+<div class="dui-scope mt-3 space-y-3">
+  <div class="grid gap-4 xl:grid-cols-2 items-start">
+    <div data-dui-theme="light" class="dui-scope rounded-box bg-base-200 text-base-content p-4 space-y-3">
+      <span class="dui-badge dui-badge-outline">light</span>
+        <div class="dui-card w-96 bg-base-100 dui-card-md shadow-sm">
+          <div class="dui-card-body">
+            <h2 class="dui-card-title">Medium Card</h2>
+            <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+            <div class="dui-card-actions justify-end">
+              <button class="dui-btn dui-btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div data-dui-theme="dark" class="dui-scope rounded-box bg-base-200 text-base-content p-4 space-y-3">
+      <span class="dui-badge dui-badge-outline">dark</span>
+        <div class="dui-card w-96 bg-base-100 dui-card-md shadow-sm">
+          <div class="dui-card-body">
+            <h2 class="dui-card-title">Medium Card</h2>
+            <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+            <div class="dui-card-actions justify-end">
+              <button class="dui-btn dui-btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <p class="text-xs opacity-70">Docs: <a href="https://daisyui.com/components/card/" target="_blank" rel="noopener noreferrer">Card sizes</a></p>
 </div>
 
 ---
 transition: slide-up
+lesson: 11
+lessonTone: cyan
 ---
 
-# Demo daisyUI: navigazione e dati
+# Card sizes · LG
 
-<div class="space-y-3 mt-2 text-sm">
-  <div class="navbar bg-base-100 border border-base-300 rounded-box min-h-0 h-12 px-3">
-    <div class="navbar-start"><button class="btn btn-xs btn-ghost">Menu</button></div>
-    <div class="navbar-center font-semibold">Navbar</div>
-    <div class="navbar-end"><button class="btn btn-xs btn-primary">Accedi</button></div>
-  </div>
-
-  <div class="flex gap-3 items-start">
-    <ul class="menu menu-sm bg-base-100 border border-base-300 rounded-box w-44">
-      <li><a>Dashboard</a></li>
-      <li><a class="menu-active">Browser</a></li>
-      <li><a>Impostazioni</a></li>
-    </ul>
-
-    <div class="flex-1 space-y-2">
-      <div class="breadcrumbs text-xs">
-        <ul>
-          <li><a>Home</a></li>
-          <li><a>Comparativa</a></li>
-          <li>Browser</li>
-        </ul>
-      </div>
-
-      <div role="tablist" class="tabs tabs-box tabs-sm">
-        <a role="tab" class="tab tab-active">Tab A</a>
-        <a role="tab" class="tab">Tab B</a>
-        <a role="tab" class="tab">Tab C</a>
-      </div>
-
-      <ul class="steps steps-horizontal steps-xs w-full">
-        <li class="step step-primary">Ricerca</li>
-        <li class="step step-primary">Scelta</li>
-        <li class="step">Verifica</li>
-      </ul>
-
-      <div class="stats stats-horizontal border border-base-300 shadow-none">
-        <div class="stat p-3">
-          <div class="stat-title text-xs">Visitatori</div>
-          <div class="stat-value text-lg">12.4K</div>
+<div class="dui-scope mt-3 space-y-3">
+  <div class="grid gap-4 xl:grid-cols-2 items-start">
+    <div data-dui-theme="light" class="dui-scope rounded-box bg-base-200 text-base-content p-4 space-y-3">
+      <span class="dui-badge dui-badge-outline">light</span>
+        <div class="dui-card w-96 bg-base-100 dui-card-lg shadow-sm">
+          <div class="dui-card-body">
+            <h2 class="dui-card-title">Large Card</h2>
+            <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+            <div class="dui-card-actions justify-end">
+              <button class="dui-btn dui-btn-primary">Buy Now</button>
+            </div>
+          </div>
         </div>
-      </div>
+    </div>
+    <div data-dui-theme="dark" class="dui-scope rounded-box bg-base-200 text-base-content p-4 space-y-3">
+      <span class="dui-badge dui-badge-outline">dark</span>
+        <div class="dui-card w-96 bg-base-100 dui-card-lg shadow-sm">
+          <div class="dui-card-body">
+            <h2 class="dui-card-title">Large Card</h2>
+            <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+            <div class="dui-card-actions justify-end">
+              <button class="dui-btn dui-btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
     </div>
   </div>
+  <p class="text-xs opacity-70">Docs: <a href="https://daisyui.com/components/card/" target="_blank" rel="noopener noreferrer">Card sizes</a></p>
+</div>
 
-  <div class="grid grid-cols-2 gap-3">
-    <ul class="list bg-base-100 border border-base-300 rounded-box p-2 text-xs">
-      <li class="list-row">Chrome</li>
-      <li class="list-row">Edge</li>
-      <li class="list-row">Firefox</li>
-    </ul>
+---
+transition: slide-left
+lesson: 11
+lessonTone: cyan
+---
 
-    <div class="overflow-x-auto rounded-box border border-base-300">
-      <table class="table table-sm">
-        <thead><tr><th>Browser</th><th>Motore</th></tr></thead>
-        <tbody>
-          <tr><td>Safari</td><td>WebKit</td></tr>
-          <tr><td>Brave</td><td>Chromium</td></tr>
-        </tbody>
-      </table>
+# Card sizes · XL
+
+<div class="dui-scope mt-3 space-y-3">
+  <div class="grid gap-4 xl:grid-cols-2 items-start">
+    <div data-dui-theme="light" class="dui-scope rounded-box bg-base-200 text-base-content p-4 space-y-3">
+      <span class="dui-badge dui-badge-outline">light</span>
+        <div class="dui-card w-96 bg-base-100 dui-card-xl shadow-sm">
+          <div class="dui-card-body">
+            <h2 class="dui-card-title">Xlarge Card</h2>
+            <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+            <div class="dui-card-actions justify-end">
+              <button class="dui-btn dui-btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div data-dui-theme="dark" class="dui-scope rounded-box bg-base-200 text-base-content p-4 space-y-3">
+      <span class="dui-badge dui-badge-outline">dark</span>
+        <div class="dui-card w-96 bg-base-100 dui-card-xl shadow-sm">
+          <div class="dui-card-body">
+            <h2 class="dui-card-title">Xlarge Card</h2>
+            <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+            <div class="dui-card-actions justify-end">
+              <button class="dui-btn dui-btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
     </div>
   </div>
+  <p class="text-xs opacity-70">Docs: <a href="https://daisyui.com/components/card/" target="_blank" rel="noopener noreferrer">Card sizes</a></p>
+</div>
+
+---
+transition: fade
+lesson: 11
+lessonTone: cyan
+---
+
+# Card with a card-border
+
+<div class="dui-scope mt-3 space-y-3">
+  <div class="grid gap-4 xl:grid-cols-2 items-start">
+    <div data-dui-theme="light" class="dui-scope rounded-box bg-base-200 text-base-content p-4 space-y-3">
+      <span class="dui-badge dui-badge-outline">light</span>
+        <div class="dui-card dui-card-border bg-base-100 w-96">
+          <div class="dui-card-body">
+            <h2 class="dui-card-title">Card Title</h2>
+            <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+            <div class="dui-card-actions justify-end">
+              <button class="dui-btn dui-btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div data-dui-theme="dark" class="dui-scope rounded-box bg-base-200 text-base-content p-4 space-y-3">
+      <span class="dui-badge dui-badge-outline">dark</span>
+        <div class="dui-card dui-card-border bg-base-100 w-96">
+          <div class="dui-card-body">
+            <h2 class="dui-card-title">Card Title</h2>
+            <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+            <div class="dui-card-actions justify-end">
+              <button class="dui-btn dui-btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <p class="text-xs opacity-70">Docs: <a href="https://daisyui.com/components/card/" target="_blank" rel="noopener noreferrer">Card with a card-border</a></p>
 </div>
 
 ---
 transition: slide-up
+lesson: 11
+lessonTone: cyan
 ---
 
-# Demo daisyUI: timeline, filter e overlay
+# Card with a dash border
 
-<div class="grid grid-cols-2 gap-4 mt-2 text-sm">
-  <div class="space-y-3">
-    <ul class="timeline timeline-vertical timeline-compact">
-      <li>
-        <div class="timeline-start">1995</div>
-        <div class="timeline-middle">•</div>
-        <div class="timeline-end timeline-box">Internet Explorer</div>
-      </li>
-      <li>
-        <div class="timeline-start">2008</div>
-        <div class="timeline-middle">•</div>
-        <div class="timeline-end timeline-box">Chrome</div>
-      </li>
-      <li>
-        <div class="timeline-start">2016</div>
-        <div class="timeline-middle">•</div>
-        <div class="timeline-end timeline-box">Brave</div>
-      </li>
-    </ul>
-
-    <form class="filter">
-      <input class="btn btn-xs filter-reset" type="reset" value="×" />
-      <input class="btn btn-xs" type="radio" name="demo-filter" aria-label="Tutti" checked />
-      <input class="btn btn-xs" type="radio" name="demo-filter" aria-label="Chromium" />
-      <input class="btn btn-xs" type="radio" name="demo-filter" aria-label="Gecko" />
-      <input class="btn btn-xs" type="radio" name="demo-filter" aria-label="WebKit" />
-    </form>
-
-    <div class="dropdown dropdown-bottom">
-      <div tabindex="0" role="button" class="btn btn-sm">Dropdown</div>
-      <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-44 p-2 shadow-sm border border-base-300">
-        <li><a>Voce 1</a></li>
-        <li><a>Voce 2</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="space-y-3">
-    <div class="collapse collapse-arrow border border-base-300 bg-base-100">
-      <input type="checkbox" checked />
-      <div class="collapse-title text-sm font-semibold">Collapse</div>
-      <div class="collapse-content text-xs">Contenuto comprimibile in stile accordion.</div>
-    </div>
-
-    <label class="swap swap-rotate btn btn-sm btn-outline">
-      <input type="checkbox" checked />
-      <span class="swap-on">ON</span>
-      <span class="swap-off">OFF</span>
-    </label>
-
-    <div class="modal modal-open !static !inset-auto !m-0">
-      <div class="modal-box max-w-xs p-4">
-        <h3 class="font-semibold">Modal</h3>
-        <p class="text-xs mt-1">Versione statica dentro la slide.</p>
-        <div class="modal-action mt-2">
-          <button class="btn btn-xs">Chiudi</button>
+<div class="dui-scope mt-3 space-y-3">
+  <div class="grid gap-4 xl:grid-cols-2 items-start">
+    <div data-dui-theme="light" class="dui-scope rounded-box bg-base-200 text-base-content p-4 space-y-3">
+      <span class="dui-badge dui-badge-outline">light</span>
+        <div class="dui-card dui-card-dash bg-base-100 w-96">
+          <div class="dui-card-body">
+            <h2 class="dui-card-title">Card Title</h2>
+            <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+            <div class="dui-card-actions justify-end">
+              <button class="dui-btn dui-btn-primary">Buy Now</button>
+            </div>
+          </div>
         </div>
-      </div>
-      <label class="modal-backdrop">close</label>
+    </div>
+    <div data-dui-theme="dark" class="dui-scope rounded-box bg-base-200 text-base-content p-4 space-y-3">
+      <span class="dui-badge dui-badge-outline">dark</span>
+        <div class="dui-card dui-card-dash bg-base-100 w-96">
+          <div class="dui-card-body">
+            <h2 class="dui-card-title">Card Title</h2>
+            <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+            <div class="dui-card-actions justify-end">
+              <button class="dui-btn dui-btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
     </div>
   </div>
+  <p class="text-xs opacity-70">Docs: <a href="https://daisyui.com/components/card/" target="_blank" rel="noopener noreferrer">Card with a dash border</a></p>
+</div>
+
+---
+transition: slide-left
+lesson: 11
+lessonTone: cyan
+---
+
+# Card with badge
+
+<div class="dui-scope mt-3 space-y-3">
+  <div class="grid gap-4 xl:grid-cols-2 items-start">
+    <div data-dui-theme="light" class="dui-scope rounded-box bg-base-200 text-base-content p-4 space-y-3">
+      <span class="dui-badge dui-badge-outline">light</span>
+        <div class="dui-card bg-base-100 w-96 shadow-sm">
+          <figure>
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+              alt="Shoes" />
+          </figure>
+          <div class="dui-card-body">
+            <h2 class="dui-card-title">
+              Card Title
+              <div class="dui-badge dui-badge-secondary">NEW</div>
+            </h2>
+            <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+            <div class="dui-card-actions justify-end">
+              <div class="dui-badge dui-badge-outline">Fashion</div>
+              <div class="dui-badge dui-badge-outline">Products</div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div data-dui-theme="dark" class="dui-scope rounded-box bg-base-200 text-base-content p-4 space-y-3">
+      <span class="dui-badge dui-badge-outline">dark</span>
+        <div class="dui-card bg-base-100 w-96 shadow-sm">
+          <figure>
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+              alt="Shoes" />
+          </figure>
+          <div class="dui-card-body">
+            <h2 class="dui-card-title">
+              Card Title
+              <div class="dui-badge dui-badge-secondary">NEW</div>
+            </h2>
+            <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+            <div class="dui-card-actions justify-end">
+              <div class="dui-badge dui-badge-outline">Fashion</div>
+              <div class="dui-badge dui-badge-outline">Products</div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <p class="text-xs opacity-70">Docs: <a href="https://daisyui.com/components/card/" target="_blank" rel="noopener noreferrer">Card with badge</a></p>
+</div>
+
+---
+transition: fade
+lesson: 11
+lessonTone: cyan
+---
+
+# Card with bottom image
+
+<div class="dui-scope mt-3 space-y-3">
+  <div class="grid gap-4 xl:grid-cols-2 items-start">
+    <div data-dui-theme="light" class="dui-scope rounded-box bg-base-200 text-base-content p-4 space-y-3">
+      <span class="dui-badge dui-badge-outline">light</span>
+        <div class="dui-card bg-base-100 w-96 shadow-sm">
+          <div class="dui-card-body">
+            <h2 class="dui-card-title">Card Title</h2>
+            <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+          </div>
+          <figure>
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+              alt="Shoes" />
+          </figure>
+        </div>
+    </div>
+    <div data-dui-theme="dark" class="dui-scope rounded-box bg-base-200 text-base-content p-4 space-y-3">
+      <span class="dui-badge dui-badge-outline">dark</span>
+        <div class="dui-card bg-base-100 w-96 shadow-sm">
+          <div class="dui-card-body">
+            <h2 class="dui-card-title">Card Title</h2>
+            <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+          </div>
+          <figure>
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+              alt="Shoes" />
+          </figure>
+        </div>
+    </div>
+  </div>
+  <p class="text-xs opacity-70">Docs: <a href="https://daisyui.com/components/card/" target="_blank" rel="noopener noreferrer">Card with bottom image</a></p>
 </div>
 
 ---
 transition: slide-up
+lesson: 11
+lessonTone: cyan
 ---
 
-# Demo daisyUI: drawer, dock, fab, toast
+# Card with centered content and paddings
 
-<div class="grid grid-cols-2 gap-4 mt-2 text-sm">
-  <div class="drawer drawer-open border border-base-300 rounded-box h-56">
-    <input id="demo-drawer" type="checkbox" class="drawer-toggle" checked />
-    <div class="drawer-content p-3 text-xs">
-      <button class="btn btn-xs drawer-button">Drawer button</button>
-      <p class="mt-2">Contenuto principale del drawer.</p>
+<div class="dui-scope mt-3 space-y-3">
+  <div class="grid gap-4 xl:grid-cols-2 items-start">
+    <div data-dui-theme="light" class="dui-scope rounded-box bg-base-200 text-base-content p-4 space-y-3">
+      <span class="dui-badge dui-badge-outline">light</span>
+        <div class="dui-card bg-base-100 w-96 shadow-sm">
+          <figure class="px-10 pt-10">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+              alt="Shoes"
+              class="rounded-xl" />
+          </figure>
+          <div class="dui-card-body items-center text-center">
+            <h2 class="dui-card-title">Card Title</h2>
+            <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+            <div class="dui-card-actions">
+              <button class="dui-btn dui-btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
     </div>
-    <div class="drawer-side">
-      <label for="demo-drawer" class="drawer-overlay"></label>
-      <ul class="menu bg-base-200 text-base-content min-h-full w-40 p-2 text-xs">
-        <li><a>Sezione A</a></li>
-        <li><a>Sezione B</a></li>
-      </ul>
+    <div data-dui-theme="dark" class="dui-scope rounded-box bg-base-200 text-base-content p-4 space-y-3">
+      <span class="dui-badge dui-badge-outline">dark</span>
+        <div class="dui-card bg-base-100 w-96 shadow-sm">
+          <figure class="px-10 pt-10">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+              alt="Shoes"
+              class="rounded-xl" />
+          </figure>
+          <div class="dui-card-body items-center text-center">
+            <h2 class="dui-card-title">Card Title</h2>
+            <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+            <div class="dui-card-actions">
+              <button class="dui-btn dui-btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
     </div>
   </div>
+  <p class="text-xs opacity-70">Docs: <a href="https://daisyui.com/components/card/" target="_blank" rel="noopener noreferrer">Card with centered content and paddings</a></p>
+</div>
 
-  <div class="space-y-3 relative">
-    <div class="toast !static !translate-x-0 !translate-y-0">
-      <div class="alert alert-info p-2 text-xs">
-        <span>Toast (versione statica)</span>
-      </div>
+---
+transition: slide-left
+lesson: 11
+lessonTone: cyan
+---
+
+# Card with image overlay
+
+<div class="dui-scope mt-3 space-y-3">
+  <div class="grid gap-4 xl:grid-cols-2 items-start">
+    <div data-dui-theme="light" class="dui-scope rounded-box bg-base-200 text-base-content p-4 space-y-3">
+      <span class="dui-badge dui-badge-outline">light</span>
+        <div class="dui-card bg-base-100 dui-image-full w-96 shadow-sm">
+          <figure>
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+              alt="Shoes" />
+          </figure>
+          <div class="dui-card-body">
+            <h2 class="dui-card-title">Card Title</h2>
+            <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+            <div class="dui-card-actions justify-end">
+              <button class="dui-btn dui-btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
     </div>
+    <div data-dui-theme="dark" class="dui-scope rounded-box bg-base-200 text-base-content p-4 space-y-3">
+      <span class="dui-badge dui-badge-outline">dark</span>
+        <div class="dui-card bg-base-100 dui-image-full w-96 shadow-sm">
+          <figure>
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+              alt="Shoes" />
+          </figure>
+          <div class="dui-card-body">
+            <h2 class="dui-card-title">Card Title</h2>
+            <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+            <div class="dui-card-actions justify-end">
+              <button class="dui-btn dui-btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <p class="text-xs opacity-70">Docs: <a href="https://daisyui.com/components/card/" target="_blank" rel="noopener noreferrer">Card with image overlay</a></p>
+</div>
 
-    <div class="dock dock-sm !static !bottom-auto !left-auto !right-auto rounded-box border border-base-300">
-      <button class="dock-active">
-        <span class="dock-label">Home</span>
+---
+transition: fade
+lesson: 11
+lessonTone: cyan
+---
+
+# Card with no image
+
+<div class="dui-scope mt-3 space-y-3">
+  <div class="grid gap-4 xl:grid-cols-2 items-start">
+    <div data-dui-theme="light" class="dui-scope rounded-box bg-base-200 text-base-content p-4 space-y-3">
+      <span class="dui-badge dui-badge-outline">light</span>
+        <div class="dui-card bg-base-100 w-96 shadow-sm">
+          <div class="dui-card-body">
+            <h2 class="dui-card-title">Card title!</h2>
+            <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+            <div class="dui-card-actions justify-end">
+              <button class="dui-btn dui-btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div data-dui-theme="dark" class="dui-scope rounded-box bg-base-200 text-base-content p-4 space-y-3">
+      <span class="dui-badge dui-badge-outline">dark</span>
+        <div class="dui-card bg-base-100 w-96 shadow-sm">
+          <div class="dui-card-body">
+            <h2 class="dui-card-title">Card title!</h2>
+            <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+            <div class="dui-card-actions justify-end">
+              <button class="dui-btn dui-btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <p class="text-xs opacity-70">Docs: <a href="https://daisyui.com/components/card/" target="_blank" rel="noopener noreferrer">Card with no image</a></p>
+</div>
+
+---
+transition: slide-up
+lesson: 11
+lessonTone: cyan
+---
+
+# Card with custom color
+
+<div class="dui-scope mt-3 space-y-3">
+  <div class="grid gap-4 xl:grid-cols-2 items-start">
+    <div data-dui-theme="light" class="dui-scope rounded-box bg-base-200 text-base-content p-4 space-y-3">
+      <span class="dui-badge dui-badge-outline">light</span>
+        <div class="dui-card bg-primary text-primary-content w-96">
+          <div class="dui-card-body">
+            <h2 class="dui-card-title">Card title!</h2>
+            <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+            <div class="dui-card-actions justify-end">
+              <button class="dui-btn">Buy Now</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div data-dui-theme="dark" class="dui-scope rounded-box bg-base-200 text-base-content p-4 space-y-3">
+      <span class="dui-badge dui-badge-outline">dark</span>
+        <div class="dui-card bg-primary text-primary-content w-96">
+          <div class="dui-card-body">
+            <h2 class="dui-card-title">Card title!</h2>
+            <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+            <div class="dui-card-actions justify-end">
+              <button class="dui-btn">Buy Now</button>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <p class="text-xs opacity-70">Docs: <a href="https://daisyui.com/components/card/" target="_blank" rel="noopener noreferrer">Card with custom color</a></p>
+</div>
+
+---
+transition: slide-left
+lesson: 11
+lessonTone: cyan
+---
+
+# Centered card with neutral color
+
+<div class="dui-scope mt-3 space-y-3">
+  <div class="grid gap-4 xl:grid-cols-2 items-start">
+    <div data-dui-theme="light" class="dui-scope rounded-box bg-base-200 text-base-content p-4 space-y-3">
+      <span class="dui-badge dui-badge-outline">light</span>
+        <div class="dui-card bg-neutral text-neutral-content w-96">
+          <div class="dui-card-body items-center text-center">
+            <h2 class="dui-card-title">Cookies!</h2>
+            <p>We are using cookies for no reason.</p>
+            <div class="dui-card-actions justify-end">
+              <button class="dui-btn dui-btn-primary">Accept</button>
+              <button class="dui-btn dui-btn-ghost">Deny</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div data-dui-theme="dark" class="dui-scope rounded-box bg-base-200 text-base-content p-4 space-y-3">
+      <span class="dui-badge dui-badge-outline">dark</span>
+        <div class="dui-card bg-neutral text-neutral-content w-96">
+          <div class="dui-card-body items-center text-center">
+            <h2 class="dui-card-title">Cookies!</h2>
+            <p>We are using cookies for no reason.</p>
+            <div class="dui-card-actions justify-end">
+              <button class="dui-btn dui-btn-primary">Accept</button>
+              <button class="dui-btn dui-btn-ghost">Deny</button>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <p class="text-xs opacity-70">Docs: <a href="https://daisyui.com/components/card/" target="_blank" rel="noopener noreferrer">Centered card with neutral color</a></p>
+</div>
+
+---
+transition: fade
+lesson: 11
+lessonTone: cyan
+---
+
+# Card with action on top
+
+<div class="dui-scope mt-3 space-y-3">
+  <div class="grid gap-4 xl:grid-cols-2 items-start">
+    <div data-dui-theme="light" class="dui-scope rounded-box bg-base-200 text-base-content p-4 space-y-3">
+      <span class="dui-badge dui-badge-outline">light</span>
+        <div class="dui-card bg-base-100 w-96 shadow-sm">
+          <div class="dui-card-body">
+            <div class="dui-card-actions justify-end">
+              <button class="dui-btn dui-btn-square dui-btn-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <p>We are using cookies for no reason.</p>
+          </div>
+        </div>
+    </div>
+    <div data-dui-theme="dark" class="dui-scope rounded-box bg-base-200 text-base-content p-4 space-y-3">
+      <span class="dui-badge dui-badge-outline">dark</span>
+        <div class="dui-card bg-base-100 w-96 shadow-sm">
+          <div class="dui-card-body">
+            <div class="dui-card-actions justify-end">
+              <button class="dui-btn dui-btn-square dui-btn-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <p>We are using cookies for no reason.</p>
+          </div>
+        </div>
+    </div>
+  </div>
+  <p class="text-xs opacity-70">Docs: <a href="https://daisyui.com/components/card/" target="_blank" rel="noopener noreferrer">Card with action on top</a></p>
+</div>
+
+---
+transition: slide-up
+lesson: 11
+lessonTone: cyan
+---
+
+# Card with image on side
+
+<div class="dui-scope mt-3 space-y-3">
+  <div class="grid gap-4 xl:grid-cols-2 items-start">
+    <div data-dui-theme="light" class="dui-scope rounded-box bg-base-200 text-base-content p-4 space-y-3">
+      <span class="dui-badge dui-badge-outline">light</span>
+        <div class="dui-card dui-card-side bg-base-100 shadow-sm max-w-3xl">
+          <figure>
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
+              alt="Movie" />
+          </figure>
+          <div class="dui-card-body">
+            <h2 class="dui-card-title">New movie is released!</h2>
+            <p>Click the button to watch on Jetflix app.</p>
+            <div class="dui-card-actions justify-end">
+              <button class="dui-btn dui-btn-primary">Watch</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div data-dui-theme="dark" class="dui-scope rounded-box bg-base-200 text-base-content p-4 space-y-3">
+      <span class="dui-badge dui-badge-outline">dark</span>
+        <div class="dui-card dui-card-side bg-base-100 shadow-sm max-w-3xl">
+          <figure>
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
+              alt="Movie" />
+          </figure>
+          <div class="dui-card-body">
+            <h2 class="dui-card-title">New movie is released!</h2>
+            <p>Click the button to watch on Jetflix app.</p>
+            <div class="dui-card-actions justify-end">
+              <button class="dui-btn dui-btn-primary">Watch</button>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <p class="text-xs opacity-70">Docs: <a href="https://daisyui.com/components/card/" target="_blank" rel="noopener noreferrer">Card with image on side</a></p>
+</div>
+
+---
+transition: slide-left
+lesson: 11
+lessonTone: cyan
+---
+
+# Responsive card (mobile first)
+
+<div class="dui-scope mt-3 space-y-3">
+  <div class="grid gap-4 xl:grid-cols-2 items-start">
+    <div data-dui-theme="light" class="dui-scope rounded-box bg-base-200 text-base-content p-4 space-y-3">
+      <span class="dui-badge dui-badge-outline">light</span>
+        <div class="dui-card lg:dui-card-side bg-base-100 shadow-sm max-w-3xl">
+          <figure>
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp"
+              alt="Album" />
+          </figure>
+          <div class="dui-card-body">
+            <h2 class="dui-card-title">New album is released!</h2>
+            <p>Click the button to listen on Spotiwhy app.</p>
+            <div class="dui-card-actions justify-end">
+              <button class="dui-btn dui-btn-primary">Listen</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div data-dui-theme="dark" class="dui-scope rounded-box bg-base-200 text-base-content p-4 space-y-3">
+      <span class="dui-badge dui-badge-outline">dark</span>
+        <div class="dui-card lg:dui-card-side bg-base-100 shadow-sm max-w-3xl">
+          <figure>
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp"
+              alt="Album" />
+          </figure>
+          <div class="dui-card-body">
+            <h2 class="dui-card-title">New album is released!</h2>
+            <p>Click the button to listen on Spotiwhy app.</p>
+            <div class="dui-card-actions justify-end">
+              <button class="dui-btn dui-btn-primary">Listen</button>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <p class="text-xs opacity-70">Docs: <a href="https://daisyui.com/components/card/" target="_blank" rel="noopener noreferrer">Responsive card</a></p>
+</div>
+
+---
+transition: fade
+lesson: 11
+lessonTone: cyan
+---
+
+# Kbd
+
+<div class="dui-scope mt-3 space-y-3 text-sm">
+  <div class="flex flex-wrap items-center gap-2">
+    <kbd class="dui-kbd">Ctrl</kbd>
+    <kbd class="dui-kbd">Shift</kbd>
+    <kbd class="dui-kbd">Del</kbd>
+  </div>
+  <div class="flex items-center gap-2">
+    <kbd class="dui-kbd dui-kbd-sm">Shift</kbd>
+    <kbd class="dui-kbd dui-kbd-md">Shift</kbd>
+    <kbd class="dui-kbd dui-kbd-lg">Shift</kbd>
+  </div>
+  <p class="text-xs opacity-70">Docs: <a href="https://daisyui.com/components/kbd/" target="_blank" rel="noopener noreferrer">Kbd</a></p>
+</div>
+
+---
+transition: slide-up
+lesson: 11
+lessonTone: cyan
+---
+
+# List
+
+<div class="dui-scope mt-3 space-y-3">
+  <ul class="dui-list bg-base-100 rounded-box shadow-md max-w-2xl">
+    <li class="p-4 pb-2 text-xs opacity-60 tracking-wide">Most played songs this week</li>
+    <li class="dui-list-row">
+      <div class="text-4xl font-thin opacity-30 tabular-nums">01</div>
+      <div><img class="size-10 rounded-box" src="https://img.daisyui.com/images/profile/demo/1@94.webp" alt="Cover song 1" /></div>
+      <div class="dui-list-col-grow">
+        <div>Cristina</div>
+        <div class="text-xs uppercase font-semibold opacity-60">Lynyrd Skynyrd</div>
+      </div>
+      <button class="dui-btn dui-btn-square dui-btn-ghost" aria-label="Play song 1">
+        <svg class="size-[1.2em]" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M6 4v16l13-8z"></path></svg>
       </button>
-      <button><span class="dock-label">Search</span></button>
-      <button><span class="dock-label">User</span></button>
-    </div>
+    </li>
+    <li class="dui-list-row">
+      <div class="text-4xl font-thin opacity-30 tabular-nums">02</div>
+      <div><img class="size-10 rounded-box" src="https://img.daisyui.com/images/profile/demo/2@94.webp" alt="Cover song 2" /></div>
+      <div class="dui-list-col-grow">
+        <div>2050</div>
+        <div class="text-xs uppercase font-semibold opacity-60">Hilltop Hoods</div>
+      </div>
+      <button class="dui-btn dui-btn-square dui-btn-ghost" aria-label="Play song 2">
+        <svg class="size-[1.2em]" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M6 4v16l13-8z"></path></svg>
+      </button>
+    </li>
+  </ul>
+  <p class="text-xs opacity-70">Docs: <a href="https://daisyui.com/components/list/" target="_blank" rel="noopener noreferrer">List</a></p>
+</div>
 
-    <div class="fab fab-flower !static !bottom-auto !left-auto !right-auto !items-start">
-      <button tabindex="0" class="btn btn-primary btn-sm">+</button>
-      <button class="btn btn-sm">A</button>
-      <button class="btn btn-sm">B</button>
-      <button class="btn btn-sm">C</button>
+---
+transition: slide-left
+lesson: 11
+lessonTone: cyan
+---
+
+# Stat
+
+<div class="dui-scope mt-3 space-y-3">
+  <div class="dui-stats shadow">
+    <div class="dui-stat">
+      <div class="dui-stat-title">Total Page Views</div>
+      <div class="dui-stat-value">89,400</div>
+      <div class="dui-stat-desc">21% more than last month</div>
     </div>
   </div>
+  <p class="text-xs opacity-70">Docs: <a href="https://daisyui.com/components/stat/" target="_blank" rel="noopener noreferrer">Stat</a></p>
+</div>
+
+---
+transition: fade
+lesson: 11
+lessonTone: cyan
+---
+
+# Table
+
+<div class="dui-scope mt-3 space-y-3">
+  <div class="overflow-x-auto">
+    <table class="dui-table dui-table-zebra">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Name</th>
+          <th>Job</th>
+          <th>Favorite Color</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><th>1</th><td>Cy Ganderton</td><td>Quality Control Specialist</td><td>Blue</td></tr>
+        <tr><th>2</th><td>Hart Hagerty</td><td>Desktop Support Technician</td><td>Purple</td></tr>
+        <tr><th>3</th><td>Brice Swyre</td><td>Tax Accountant</td><td>Red</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="text-xs opacity-70">Docs: <a href="https://daisyui.com/components/table/" target="_blank" rel="noopener noreferrer">Table</a></p>
 </div>
 
 ---
 transition: slide-up
+lesson: 11
+lessonTone: cyan
 ---
 
-# Demo daisyUI: media e mockup
+# Timeline
 
-<div class="grid grid-cols-2 gap-4 mt-2 text-sm">
-  <div class="space-y-3">
-    <div class="hero bg-base-200 rounded-box min-h-32">
-      <div class="hero-content text-center py-4">
-        <div>
-          <h3 class="text-base font-semibold">Hero</h3>
-          <p class="text-xs">Sezione introduttiva con CTA.</p>
-        </div>
+<div class="dui-scope mt-3 space-y-3">
+  <ul class="dui-timeline">
+    <li>
+      <div class="dui-timeline-start">1984</div>
+      <div class="dui-timeline-middle">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+          <path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882L9.83 11.177l-1.97-1.97a.75.75 0 0 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l3.42-4.488Z" clip-rule="evenodd"></path>
+        </svg>
       </div>
-    </div>
-
-    <div class="carousel rounded-box h-24 w-full">
-      <div class="carousel-item w-full bg-primary/20 flex items-center justify-center">Slide 1</div>
-      <div class="carousel-item w-full bg-secondary/20 flex items-center justify-center">Slide 2</div>
-      <div class="carousel-item w-full bg-accent/20 flex items-center justify-center">Slide 3</div>
-    </div>
-
-    <div class="chat chat-start">
-      <div class="chat-bubble text-xs">Chat bubble</div>
-    </div>
-  </div>
-
-  <div class="space-y-3">
-    <div class="mockup-window border border-base-300 bg-base-100">
-      <div class="p-3 text-xs">Mockup window</div>
-    </div>
-
-    <div class="mockup-browser border border-base-300 bg-base-100">
-      <div class="mockup-browser-toolbar">
-        <input type="text" placeholder="https://daisyui.com" />
+      <div class="dui-timeline-end dui-timeline-box">First Macintosh computer</div>
+      <hr />
+    </li>
+    <li>
+      <hr />
+      <div class="dui-timeline-start">1998</div>
+      <div class="dui-timeline-middle">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+          <path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882L9.83 11.177l-1.97-1.97a.75.75 0 0 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l3.42-4.488Z" clip-rule="evenodd"></path>
+        </svg>
       </div>
-      <div class="p-3 text-xs">Mockup browser</div>
-    </div>
+      <div class="dui-timeline-end dui-timeline-box">iMac</div>
+      <hr />
+    </li>
+    <li>
+      <hr />
+      <div class="dui-timeline-start">2001</div>
+      <div class="dui-timeline-middle">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+          <path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882L9.83 11.177l-1.97-1.97a.75.75 0 0 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l3.42-4.488Z" clip-rule="evenodd"></path>
+        </svg>
+      </div>
+      <div class="dui-timeline-end dui-timeline-box">iPod</div>
+      <hr />
+    </li>
+    <li>
+      <hr />
+      <div class="dui-timeline-start">2007</div>
+      <div class="dui-timeline-middle">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+          <path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882L9.83 11.177l-1.97-1.97a.75.75 0 0 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l3.42-4.488Z" clip-rule="evenodd"></path>
+        </svg>
+      </div>
+      <div class="dui-timeline-end dui-timeline-box">iPhone</div>
+    </li>
+  </ul>
+  <p class="text-xs opacity-70">Docs: <a href="https://daisyui.com/components/timeline/" target="_blank" rel="noopener noreferrer">Timeline</a></p>
+</div>
 
-    <div class="footer footer-center bg-base-200 rounded-box p-3 text-xs">
-      <p>Footer component</p>
-    </div>
-  </div>
+---
+transition: slide-left
+lesson: 11
+lessonTone: cyan
+---
+
+# Link
+
+<div class="dui-scope mt-3 space-y-3 text-sm">
+  <a class="dui-link" href="https://daisyui.com/components/link/" target="_blank" rel="noopener noreferrer">I'm a simple link</a>
+  <a class="dui-link dui-link-primary" href="https://daisyui.com/components/link/" target="_blank" rel="noopener noreferrer">I'm a primary link</a>
+  <a class="dui-link dui-link-hover" href="https://daisyui.com/components/link/" target="_blank" rel="noopener noreferrer">I'm a hover link</a>
+  <p class="text-xs opacity-70">Docs: <a href="https://daisyui.com/components/link/" target="_blank" rel="noopener noreferrer">Link</a></p>
+</div>
+
+---
+transition: fade
+lesson: 11
+lessonTone: cyan
+---
+
+# Steps
+
+<div class="dui-scope mt-3 space-y-3">
+  <ul class="dui-steps">
+    <li class="dui-step dui-step-primary">Register</li>
+    <li class="dui-step dui-step-primary">Choose plan</li>
+    <li class="dui-step">Purchase</li>
+    <li class="dui-step">Receive Product</li>
+  </ul>
+  <p class="text-xs opacity-70">Docs: <a href="https://daisyui.com/components/steps/" target="_blank" rel="noopener noreferrer">Steps</a></p>
 </div>
 
 ---
 transition: slide-up
+lesson: 11
+lessonTone: cyan
 ---
 
-# Demo daisyUI: diff, calendar e motion
+# Mockup Browser
 
-<div class="grid grid-cols-2 gap-4 mt-2 text-sm">
-  <div class="space-y-3">
-    <figure class="diff rounded-box border border-base-300 overflow-hidden aspect-[16/6]" tabindex="0">
-      <div class="diff-item-1">
-        <div class="h-full w-full bg-primary/25 flex items-center justify-center">Prima</div>
-      </div>
-      <div class="diff-item-2">
-        <div class="h-full w-full bg-secondary/25 flex items-center justify-center">Dopo</div>
-      </div>
-      <div class="diff-resizer"></div>
-    </figure>
-
-    <div class="pika-single w-full">
-      <div class="pika-lendar w-full">
-        <div class="pika-title">
-          <button class="pika-prev">prev</button>
-          <span class="pika-label">Febbraio 2026</span>
-          <button class="pika-next">next</button>
-        </div>
-        <table class="pika-table text-xs">
-          <thead>
-            <tr>
-              <th><abbr>L</abbr></th><th><abbr>M</abbr></th><th><abbr>M</abbr></th><th><abbr>G</abbr></th><th><abbr>V</abbr></th><th><abbr>S</abbr></th><th><abbr>D</abbr></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><button class="pika-button">3</button></td>
-              <td><button class="pika-button">4</button></td>
-              <td><button class="pika-button">5</button></td>
-              <td class="is-selected"><button class="pika-button">6</button></td>
-              <td><button class="pika-button">7</button></td>
-              <td><button class="pika-button">8</button></td>
-              <td><button class="pika-button">9</button></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+<div class="dui-scope mt-3 space-y-3">
+  <div class="dui-mockup-browser border border-base-300">
+    <div class="dui-mockup-browser-toolbar">
+      <div class="dui-input border border-base-300">https://daisyui.com</div>
     </div>
+    <div class="grid place-content-center h-40 border-t border-base-300">Hello!</div>
   </div>
-
-  <div class="space-y-3">
-    <div class="hover-3d rounded-box w-full">
-      <img src="./imgs/Logo-UCSC.jpg" alt="hover-3d demo" class="rounded-box w-full" />
-      <div></div><div></div><div></div>
-      <div></div><div></div><div></div>
-      <div></div><div></div>
-    </div>
-
-    <figure class="hover-gallery rounded-box overflow-hidden h-24">
-      <img src="./imgs/Logo-UCSC.jpg" alt="A" />
-      <img src="./imgs/Logo-UCSC.jpg" alt="B" />
-      <img src="./imgs/Logo-UCSC.jpg" alt="C" />
-      <img src="./imgs/Logo-UCSC.jpg" alt="D" />
-    </figure>
-
-    <p class="text-lg font-semibold">
-      Browser
-      <span class="text-rotate [--duration:6s] text-primary align-baseline">
-        <span>
-          <span>veloci</span>
-          <span>sicuri</span>
-          <span>accessibili</span>
-        </span>
-      </span>
-    </p>
-  </div>
+  <p class="text-xs opacity-70">Docs: <a href="https://daisyui.com/components/mockup-browser/" target="_blank" rel="noopener noreferrer">Mockup Browser</a></p>
 </div>
+
+---
+transition: slide-left
+lesson: 11
+lessonTone: cyan
+---
+
+# Mockup Code
+
+<div class="dui-scope mt-3 space-y-3">
+  <div class="dui-mockup-code w-full">
+    <pre data-prefix="$"><code>npm i -D daisyui@latest</code></pre>
+    <pre data-prefix=">" class="text-warning"><code>installing...</code></pre>
+    <pre data-prefix=">" class="text-success"><code>Done!</code></pre>
+  </div>
+  <p class="text-xs opacity-70">Docs: <a href="https://daisyui.com/components/mockup-code/" target="_blank" rel="noopener noreferrer">Mockup Code</a></p>
+</div>
+
+---
+transition: fade
+lesson: 11
+lessonTone: cyan
+---
+
+# Mockup Phone
+
+<div class="dui-scope mt-3">
+  <div class="dui-mockup-phone scale-90 origin-top">
+    <div class="dui-mockup-phone-camera"></div>
+    <div class="dui-mockup-phone-display bg-neutral-900 text-neutral-content grid place-content-center">
+      It's Glowtime.
+    </div>
+  </div>
+  <p class="text-xs opacity-70">Docs: <a href="https://daisyui.com/components/mockup-phone/" target="_blank" rel="noopener noreferrer">Mockup Phone</a></p>
+</div>
+
+---
+transition: slide-up
+lesson: 11
+lessonTone: cyan
+---
+
+# Mockup Window
+
+<div class="dui-scope mt-3 space-y-3">
+  <div class="dui-mockup-window border border-base-300">
+    <div class="flex justify-center px-4 py-16 border-t border-base-300">Hello!</div>
+  </div>
+  <p class="text-xs opacity-70">Docs: <a href="https://daisyui.com/components/mockup-window/" target="_blank" rel="noopener noreferrer">Mockup Window</a></p>
+</div>
+
+---
+layout: center
+transition: slide-up
+class: bg-cyan-100
+lesson: 11
+lessonTone: cyan
+---
+
+<h1 class="text-6xl font-black tracking-tight">
+  Domande<span v-click class="text-primary">?</span>
+</h1>
+<p v-click class="mt-4 opacity-80">Q&A sui componenti daisyUI selezionati</p>

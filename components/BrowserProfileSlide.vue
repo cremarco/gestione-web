@@ -21,7 +21,7 @@ const websiteLabel = computed(() => {
 </script>
 
 <template>
-  <section class="relative grid gap-3">
+  <section class="dui-scope relative grid gap-3">
     <img
       :src="logo"
       :alt="`Logo di ${name}`"
@@ -30,11 +30,11 @@ const websiteLabel = computed(() => {
       decoding="async"
     />
 
-    <header class="card bg-base-100 border border-base-300 shadow-sm">
-      <div class="card-body p-3 pr-20">
+    <header class="dui-card bg-base-100 border border-base-300 shadow-sm">
+      <div class="dui-card-body p-3 pr-20">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
-          <article class="card bg-base-100 border border-base-300">
-            <div class="card-body p-3">
+          <article class="dui-card bg-base-100 border border-base-300">
+            <div class="dui-card-body p-3">
               <p class="m-0 text-[0.52rem] font-bold uppercase tracking-[0.08em] text-base-content/60">
                 Produttore
               </p>
@@ -44,8 +44,8 @@ const websiteLabel = computed(() => {
             </div>
           </article>
 
-          <article class="card bg-base-100 border border-base-300">
-            <div class="card-body p-3">
+          <article class="dui-card bg-base-100 border border-base-300">
+            <div class="dui-card-body p-3">
               <p class="m-0 text-[0.52rem] font-bold uppercase tracking-[0.08em] text-base-content/60">
                 Nascita
               </p>
@@ -59,9 +59,9 @@ const websiteLabel = computed(() => {
             :href="website"
             target="_blank"
             rel="noopener noreferrer"
-            class="card bg-base-100 border border-base-300 hover:border-primary/40 transition-colors no-underline"
+            class="dui-card bg-base-100 border border-base-300 hover:border-primary/40 transition-colors no-underline"
           >
-            <div class="card-body p-3">
+            <div class="dui-card-body p-3">
               <p class="m-0 text-[0.52rem] font-bold uppercase tracking-[0.08em] text-base-content/60">
                 Sito
               </p>
@@ -75,9 +75,9 @@ const websiteLabel = computed(() => {
     </header>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-      <article class="card bg-base-100 border border-base-300 shadow-sm">
-        <div class="card-body p-3">
-          <h3 class="card-title text-sm">Caratteristiche</h3>
+      <article class="dui-card bg-base-100 border border-base-300 shadow-sm">
+        <div class="dui-card-body p-3">
+          <h3 class="dui-card-title text-sm">Caratteristiche</h3>
           <ul class="m-0 pl-4 space-y-1 text-[0.66rem] leading-snug">
             <li v-for="characteristic in characteristics" :key="characteristic">
               {{ characteristic }}
@@ -86,9 +86,9 @@ const websiteLabel = computed(() => {
         </div>
       </article>
 
-      <article class="card bg-base-100 border border-base-300 shadow-sm">
-        <div class="card-body p-3">
-          <h3 class="card-title text-sm">Elementi interessanti</h3>
+      <article class="dui-card bg-base-100 border border-base-300 shadow-sm">
+        <div class="dui-card-body p-3">
+          <h3 class="dui-card-title text-sm">Elementi interessanti</h3>
           <ul class="m-0 pl-4 space-y-1 text-[0.66rem] leading-snug">
             <li v-for="highlight in highlights" :key="highlight">
               {{ highlight }}

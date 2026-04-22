@@ -118,8 +118,8 @@ const chartOption = computed<EChartsOption>(() => {
 </script>
 
 <template>
-  <section class="card bg-base-100 border border-base-300 shadow-sm">
-    <div class="card-body p-3">
+  <section class="dui-scope dui-card bg-base-100 border border-base-300 shadow-sm">
+    <div class="dui-card-body p-3">
     <VChart
       class="h-[17.4rem] w-full"
       :option="chartOption"

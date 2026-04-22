@@ -100,14 +100,14 @@ const visibleBrowsers = computed(() => {
 </script>
 
 <template>
-  <section class="mt-1" aria-label="Browser con filtro per categoria">
+  <section class="dui-scope mt-1" aria-label="Browser con filtro per categoria">
     <div class="flex flex-wrap gap-2" role="group" aria-label="Filtro tipologia browser">
       <button
         v-for="filter in filters"
         :key="filter.id"
         type="button"
-        class="btn btn-sm rounded-full"
-        :class="filter.id === activeFilter ? 'btn-primary' : 'btn-outline'"
+        class="dui-btn dui-btn-sm rounded-full"
+        :class="filter.id === activeFilter ? 'dui-btn-primary' : 'dui-btn-outline'"
         :aria-pressed="filter.id === activeFilter"
         @click="activeFilter = filter.id"
       >
@@ -116,7 +116,7 @@ const visibleBrowsers = computed(() => {
     </div>
 
     <div class="mt-3">
-      <div class="badge badge-neutral badge-sm">
+      <div class="dui-badge dui-badge-neutral dui-badge-sm">
         {{ visibleBrowsers.length }} / {{ browsers.length }} browser
       </div>
     </div>
@@ -125,9 +125,9 @@ const visibleBrowsers = computed(() => {
       <article
         v-for="browser in visibleBrowsers"
         :key="browser.name"
-        class="card h-[4.7rem] bg-base-100 border border-base-300 shadow-sm"
+        class="dui-card h-[4.7rem] bg-base-100 border border-base-300 shadow-sm"
       >
-        <div class="card-body p-2 flex flex-col items-center justify-start gap-1">
+        <div class="dui-card-body p-2 flex flex-col items-center justify-start gap-1">
           <img
             :src="browser.logo"
             :alt="`Logo di ${browser.name}`"
@@ -146,7 +146,7 @@ const visibleBrowsers = computed(() => {
             </p>
 
             <a
-              class="btn btn-ghost btn-xs absolute right-0 top-0 min-h-0 h-4 w-4 p-0"
+              class="dui-btn dui-btn-ghost dui-btn-xs absolute right-0 top-0 min-h-0 h-4 w-4 p-0"
               :href="browser.website"
               target="_blank"
               rel="noopener noreferrer"

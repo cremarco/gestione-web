@@ -1,0 +1,20 @@
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+/*
+ * Keep daisyUI scoped to Slidev layout and avoid global root side-effects.
+ * This prevents style collisions with Slidev base/theme CSS.
+ */
+@plugin "daisyui" {
+  themes: light --default, dark;
+  root: ".dui-scope";
+  prefix: dui-;
+  exclude: rootcolor, rootscrollgutter, rootscrolllock, scrollbar;
+  logs: false;
+}
+
+@source "../slides.md";
+@source "../components/**/*.{vue,js,ts}";
+@source "../pages/**/*.{md,vue}";
+@source "../snippets/**/*.{js,ts,md}";
